@@ -1,0 +1,631 @@
+/*/////////////   home-global   //////////////////////////////*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+:root{
+    --fontFamily: 'Poppins', sans-serif;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --bold: 700;
+    --myBlack: rgb(16, 15, 15);
+    --myWhite: #f9f9f9;
+    --myDarkWhite: rgb(238, 235, 235);
+    --myDarkGray: #252423;
+    --myGray: rgb(78, 76, 76);
+    --myLightGray: rgba(173,172,170,.2);
+    --myBlue: #0bc4e2; /*#2c8cc2;*/
+    --myRed: rgb(209, 54, 57);
+    --headerFontSize: 1.4rem;
+    --headerHeight: 8rem;
+    --menuFistSize: 3.5rem;
+    --fistSize: 2rem;
+    --fistSize: 2rem;
+    --fistPadding: 0.5rem;
+    --fistRadius: 100%;
+}
+*{
+    font-family: var(--fontFamily);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+html{
+    font-size: 62.5%; /*10px*/
+}
+body, header, main, section, footer {
+    width: 100vw;
+}
+a{
+    text-decoration: none;
+    color: var(--myWhite);
+}
+i{/* ??? */
+    color: var(--myWhite);
+}
+.bg-white{
+    background-color: var(--myWhite);
+}
+.co-black{
+    color: var(--myBlack);
+}
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+
+/*///////////////  home-header  //////////////////////////////*/
+.home-header{
+    position: fixed;
+    height: var(--headerHeight);
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+    z-index: 3;
+}
+.scroll-down{
+    background-color: var(--myBlack);
+}
+.home-header, .home-header > *, .home-header > * > *, .nav-bar > a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-header p, .home-header button{
+    color:var(--myBlack);
+    font-size: var(--headerFontSize);
+    font-weight: var(--medium);
+} 
+.left-home-header{
+    width: 60rem;
+    padding-left: 3.1rem;
+}
+.right-home-header{
+    /* border: solid red 0.1px; */
+    width: 38rem;
+    padding-right: 4rem;
+}
+.home-header > * > *{
+    /* background-color: rgb(163, 159, 154); */
+    position: relative;
+}
+.left-menu-container{
+    width: 9rem;
+}
+.left-menu-container:hover{
+    cursor: pointer;
+    border: solid var(--myRed) 0.5px;
+}
+i#left-menu-fist-icon{
+    font-size: var(--menuFistSize);
+}
+.home-header p{
+    color:var(--myWhite);
+    line-height: 1.4rem;
+    text-align: start;
+}
+.fist-container{
+    padding: var(--fistPadding);
+    border-radius: var(--fistRadius);
+    height: 2.8rem;
+} 
+.fist-hand-icon{
+    font-size: var(--fistSize);
+    z-index: 2;
+}
+.nav-bar{
+    width: 40rem;
+}
+.nav-bar > a{
+    padding: 7px 1rem;
+    border-radius: 10px;
+}
+.nav-bar > a:hover{
+    background-color: var(--myDarkGray);
+}
+.news{
+    width: 6.5rem;
+}
+.nav-bar p{
+    letter-spacing: 1px;
+    padding-right: 1rem;
+}
+.network-icon-container{
+    border-radius: 20%;
+    padding: 8px 8px 6px 8px;
+}
+.network-icon-container:hover{
+    background-color: var(--myDarkGray);
+    cursor: pointer;
+}
+.network-icon{
+    vertical-align: baseline;
+    font-size: 1.4rem;
+}
+.home-header form, .sign-in{
+    padding: 5px 2rem;
+    border-radius: 20px;
+}
+.home-header form{
+    border: solid red 0.1px;
+}
+.sign-in{
+    border: thin black;
+    background-color: var(--myRed);
+    padding: 6px 2rem;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+.sign-in:hover{
+    background-color: var(--myBlue);
+    cursor: pointer;
+}
+
+/*???*/
+.right-menu-tablet-container > i{
+    display: none;
+}
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+
+/*///////////////  home-main  ////////////////////////////*/
+.home-main{
+    background-color: var(--myDarkGray);
+}
+.card{
+    background-color: transparent;
+    border: none;
+    border-radius: 1rem;
+    padding: 2.2rem;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.card:hover{
+    border: solid var(--myWhite) 0.5px;
+}
+.card, .card *{
+    position: relative;
+    text-align: start;
+    z-index: 1;
+}
+#article-img-1{
+    background-image: url("/images/riot-games-data-purge-deleting-old-accounts.png");
+}
+#article-img-2{
+    background-image: url("/images/riotgames-sola-technology-center-grand-opening-1.png");
+}
+#article-img-3{
+    background-image: url("/images/00-d-i-report-original-english.png");
+}
+#article-img-4{
+    background-image: url("/images/rg-rainbowrioters-maria-pentinen.png");
+}
+#what-happening-section, #our-games-section{
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+.what-happening-title, .our-games-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 18rem;
+}
+.league-of-legends{
+    background-image: url("/images/lol-card-bg-1800.jpg");
+}
+.valorant{
+    background-image: url("/images/val-card-bg-1800-08-22.png");
+}
+.teamfight-tactics{
+    background-image: url("/images/tft-card-bg-1800.jpg");
+}
+.league-of-legends-wr{
+    background-image: url("/images/lol-wildrift-productimage.png");
+}
+.legends-of-runeterra{
+    background-image: url("/images/legends-of-runeterra-productimage.png");
+}
+.ruined-king{
+    background-image: url("/images/ruined-king-productimage.png");
+}
+.hextech-mayhem{
+    background-image: url("/images/hextetch-mayhem-card-bg-1800.jpg");
+}
+.convirgence{
+    background-image: url("/images/convrgence-productimage.png");
+}
+.song-of-nunu{
+    background-image: url("/images/song-of-nunu-card-bg-1800.jpg");
+}
+
+/*---------- star-guardian-section ---------------------------*/
+#star-guardian-section{
+    height: 61rem;
+    background-image: url("/images/main-photo-2.jpg");
+    transform: scale(1.05);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    opacity: 0.9;/*??*/
+    display: flex;
+    justify-content: start;
+    padding: 6rem;
+}
+#star-guardian-section *{
+    color: var(--myWhite);
+    font-weight: var(--bold);
+}
+.star-guardian-content{
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+.star-guardian-content > img{
+    width: 36rem;
+}
+.star-guardian-content > p{
+    font-size: 2.8rem;
+    line-height: 2.7rem;
+}
+.star-guardian-content > a{
+    position: relative;
+}
+.see-more{
+    background-color: var(--myBlue);
+    width: 23rem;
+    height: 7rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+.see-more:hover{
+    cursor: pointer;
+    box-shadow: 0px 6px 15px 0px var(--myBlue);
+}
+.right-arrow-icon{
+    font-size: 4rem;
+    position: relative;
+    top: 0.7rem;
+    left: -1.4rem;
+}
+/*----------------------------------------------------------*/
+
+/*---------- what-happening-section ---------------------------*/
+#what-happening-section{
+    background: radial-gradient(55% 180% at 5% 100%,rgb(25, 59, 94) 0,rgba(10,10,10,0) 75%,black 100%);
+}
+/* .what-happening-title{
+    border: solid 0.1px;
+} */
+.what-happening-title > h1{
+    color: var(--myWhite);
+    font-size: 4.4rem;
+    letter-spacing: 1px;
+}
+.see-more-small{
+    background-color: var(--myDarkGray);
+    color: var(--myWhite);
+    font-weight: var(--bold);
+    letter-spacing: 1px;
+    width: 11rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+}
+.see-more-small:hover{
+    cursor: pointer;
+    background-color: var(--myGray);
+}
+.flex-events-container{
+    /* border: solid red 0.1px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.2rem;
+}
+.events-hero-link{
+    flex: 1 1 60%;
+}
+.events-hero{
+    height: 26vw;
+    background-image: url("/images/hasan-colakoglu.png");
+}
+.events-hero > .fist-hand-icon{
+    position: absolute;
+}
+.hero-details{
+    position: relative;
+    top: 68%;
+}
+.hero-details > p{
+    font-size: 2.8rem;
+    line-height: 2.7rem;
+    font-weight: var(--bold);
+}
+.events-category{
+    color: var(--myGray);
+    font-weight: var(--bold);
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+.grid-events-article{
+    border: solid 0.1px;
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    
+}
+.article{
+    padding: unset;
+    height: 11.6rem;
+    background-color: var(--myDarkGray);
+}
+.article:hover{
+    background-color: var(--myGray);
+}
+.article > .fist-hand-icon{
+    position: absolute;
+    left: 96.5%;
+}
+.article-wrapper{
+    height: 100%;
+    display: flex;
+}
+.article-details{
+    padding: 2.2rem 0.5rem 2.2rem 2.2rem;
+    flex: 1 1 60%;
+}
+.article-photo{
+    background-color: gray;
+    flex: 1 1 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.article-details > p{
+    /* border: solid red 0.1px; */
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: var(--bold);
+    width: 97%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+.see-more-small-mobile{
+    display: none;
+}
+/*----------------------------------------------------------*/
+
+/*---------- our-games-section ---------------------------*/
+#our-games-section{
+    padding-top: 2rem;
+    padding-bottom: 12rem;
+}
+.our-games-title{
+    border: solid 0.1px;
+}
+.our-games-title > h1{
+    color: var(--myWhite);
+    font-size: 4.4rem;
+    letter-spacing: 1px;
+}
+.flex-games{
+    border: solid 0.1px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.flex-games > * > * > .card, .flex-games > * > *{
+    aspect-ratio: 1 / 0.5;
+}
+.grid-main-games{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 2rem 1rem;
+}
+.grid-second-games{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 2rem 1rem;
+}
+/* .second-game:last-child {
+    justify-self: center;
+    width: calc(100% / 3 - 1rem);
+    grid-column-start: span 3;
+} */
+
+/*----------------------------------------------------------*/
+
+/*---------- we-are-hiring-section ---------------------------*/
+#we-are-hiring-section{
+    min-height: 55rem;
+    /* width: 100vw; */
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.monster-photo{
+    /* flex: 1 1 50%; */
+    width: 50vw;
+    background-image: url("/images/annie.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.flex-we-are-hiring{
+    /* flex: 1 1 50%; */
+    width: 50vw;
+    background-color: var(--myDarkWhite);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-we-are-hiring > h1{
+    font-size: 4.5rem;
+}
+.flex-we-are-hiring > p{
+    color: var(--myGray);
+    width: 60rem;
+    font-size: 1.8rem;
+    font-weight: var(--medium);
+    line-height: 2.5rem;
+}
+.flex-riot-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.flex-riot-info > a:first-child, .flex-riot-info > a:last-child{
+    flex: 1 1 50%;
+}
+.flex-riot-info > a > div{
+    height: 13rem;
+    background-color: var(--myLightGray);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+.flex-riot-info > a > div > h1{
+    text-align: center;
+    color: var(--myBlack);
+    font-size: 4.5rem;
+}
+.flex-riot-info > a > div > p{
+    text-align: center;
+    color: var(--myGray);
+    font-weight: var(--bold);
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+.open-positions{}
+.offices{}
+.explore-careers{
+    color: var(--myWhite);
+    width: 30rem;
+    height: 6rem;
+    background-color: var(--myRed);
+    border: none;
+    border-radius: 2.5rem;
+    font-size: 2rem;
+    font-weight: var(--bold);
+    letter-spacing: 1px;
+}
+
+/*----------------------------------------------------------*/
+
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+
+/*/////////////   home-footer   //////////////////////////////*/
+.home-footer{
+    background-color: var(--myDarkGray);
+    padding: 0rem 2rem;
+}
+.home-footer *{
+    color: var(--myGray);
+    letter-spacing: 1px;
+}
+.home-footer > *, .home-footer > * > *{
+    border: solid red 0.1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-footer > *{
+    column-gap: 4rem;
+    padding: 4rem 0;
+    /* flex-wrap: wrap; */
+}
+.footer-row1 *{
+    font-size: 1.2rem;
+}
+.footer-fist > .fist-hand-icon{
+    font-size: 4rem;
+}
+.footer-fist > .fist-hand-icon:hover{
+    cursor: pointer;
+    color: var(--myRed);
+}
+.footer-links{
+    gap: 1.5rem 4rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.footer-links > a{
+    font-size: 1.2rem;
+    font-weight: var(--bold);
+}
+.footer-links > a:hover{
+    text-decoration: underline;
+    color: var(--myWhite);
+}
+.social-media{
+    width: 20rem;
+}
+.social-media > a > i{
+    column-gap: 4rem;
+    font-size: 2rem;
+}
+.social-media > a > i:hover{
+    cursor: pointer;
+    color: var(--myRed);
+}
+.laptop-break, .mobile-break{
+    padding: unset;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--myGray);
+    height: 0.2rem;
+}
+.footer-row2 *{
+    font-size: 1.1rem;
+}
+.copie-rights{}
+.cookie:hover{
+    text-decoration: underline;
+    color: var(--myWhite);
+}
+.all-righs >i{
+    height: 1.5rem;
+    width: 1rem;
+    font-size: 3rem;
+}
+.mobile-break{
+    display: none;
+}
+.to-the-surface{
+    font-size: 1.5rem;
+}
+.to-the-surface:hover{}
+.to-the-surface > i{
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
