@@ -246,7 +246,7 @@ i#left-menu-fist-icon{
 /*---------- star-guardian-section ---------------------------*/
 #star-guardian-section{
     height: 61rem;
-    background-image: url("/images/main-photo-2.jpg");
+    background-image: url("/images/main-photo.jpg");
     transform: scale(1.05);
     background-repeat: no-repeat;
     background-position: top;
@@ -420,9 +420,9 @@ i#left-menu-fist-icon{
     padding-top: 2rem;
     padding-bottom: 12rem;
 }
-.our-games-title{
+/* .our-games-title{
     border: solid 0.1px;
-}
+} */
 .our-games-title > h1{
     color: var(--myWhite);
     font-size: 4.4rem;
@@ -520,8 +520,8 @@ i#left-menu-fist-icon{
     letter-spacing: 1px;
     font-size: 2rem;
 }
-.open-positions{}
-.offices{}
+/* .open-positions{}
+.offices{} */
 .explore-careers{
     color: var(--myWhite);
     width: 30rem;
@@ -551,7 +551,6 @@ i#left-menu-fist-icon{
     letter-spacing: 1px;
 }
 .home-footer > *, .home-footer > * > *{
-    border: solid red 0.1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -564,10 +563,10 @@ i#left-menu-fist-icon{
 .footer-row1 *{
     font-size: 1.2rem;
 }
-.footer-fist > .fist-hand-icon{
+.footer-fist > a > .fist-hand-icon{
     font-size: 4rem;
 }
-.footer-fist > .fist-hand-icon:hover{
+.footer-fist > a > .fist-hand-icon:hover{
     cursor: pointer;
     color: var(--myRed);
 }
