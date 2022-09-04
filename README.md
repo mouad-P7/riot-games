@@ -16,7 +16,7 @@ I will try to clone "Riot Games" website from scratch.
 
 ### Links
 
-- [Live Site URL](https://mouad-p7.github.io/riot-games/)
+- [Live Site URL](https://riot-games.vercel.app/)
 
 ## My process
 

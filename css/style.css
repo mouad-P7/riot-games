@@ -36,6 +36,7 @@ html{
 }
 body, header, main, section, footer {
     width: 100vw;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -53,15 +54,14 @@ i{/* ??? */
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
-
-
+/*//////////////////////////////////////////////////////////*/
 /*///////////////  home-header  //////////////////////////////*/
 .home-header{
     position: fixed;
     height: var(--headerHeight);
     background-color: transparent;
     transition: background-color 0.2s ease;
-    z-index: 3;
+    z-index: 10;
 }
 .scroll-down{
     background-color: var(--myBlack);
@@ -81,12 +81,10 @@ i{/* ??? */
     padding-left: 3.1rem;
 }
 .right-home-header{
-    /* border: solid red 0.1px; */
     width: 38rem;
     padding-right: 4rem;
 }
 .home-header > * > *{
-    /* background-color: rgb(163, 159, 154); */
     position: relative;
 }
 .left-menu-container{
@@ -108,10 +106,11 @@ i#left-menu-fist-icon{
     padding: var(--fistPadding);
     border-radius: var(--fistRadius);
     height: 2.8rem;
+    z-index: 5;
+    /* border: solid red; */
 } 
 .fist-hand-icon{
     font-size: var(--fistSize);
-    z-index: 2;
 }
 .nav-bar{
     width: 40rem;
@@ -121,7 +120,7 @@ i#left-menu-fist-icon{
     border-radius: 10px;
 }
 .nav-bar > a:hover{
-    background-color: var(--myDarkGray);
+    background-color: var(--myGray);
 }
 .news{
     width: 6.5rem;
@@ -134,11 +133,11 @@ i#left-menu-fist-icon{
     border-radius: 20%;
     padding: 8px 8px 6px 8px;
 }
-.network-icon-container:hover{
-    background-color: var(--myDarkGray);
+.network-icon-container:hover, .right-menu-tablet-container:hover{
+    background-color: var(--myGray);
     cursor: pointer;
 }
-.network-icon{
+.network-icon, .bars-icon{
     vertical-align: baseline;
     font-size: 1.4rem;
 }
@@ -147,7 +146,7 @@ i#left-menu-fist-icon{
     border-radius: 20px;
 }
 .home-header form{
-    border: solid red 0.1px;
+    border: solid var(--myWhite) 0.1px;
 }
 .sign-in{
     border: thin black;
@@ -160,16 +159,100 @@ i#left-menu-fist-icon{
     background-color: var(--myBlue);
     cursor: pointer;
 }
-
-/*???*/
-.right-menu-tablet-container > i{
+.right-menu-tablet-container{
+    border-radius: 20%;
+    padding: 8px;
     display: none;
 }
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
-
-
+/*//////////////////////////////////////////////////////////*/
+/*//////////////mobile-nav-bar//////////////////////////////*/
+.mobile-nav-bar{
+    background-color: var(--myDarkGray);
+    position: fixed;
+    z-index: 20;
+    width: 45rem;
+    height: 100vh;
+    right: -47rem;
+    transition: right 0.1s linear 0.1s;
+}
+.visible-nav-bar{
+    right: 0;
+}
+.flex-mobile-nav-bar{
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+.flex-mobile-nav-bar > *{
+    width: 100%;
+}
+.nav-bar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+.nav-bar-header > .fist-container{
+    height: 100%;
+    width: 4rem;
+}
+.nav-bar-header > a > .fist-hand-icon{
+    font-size: 3rem;
+}
+.close-menu-tablet-container{
+    background-color: var(--myGray);
+    border-radius: 20%;
+    padding: 9px 9px 6px 9px;
+    height: 100%;
+    width: 4rem;
+}
+.close-menu-tablet-container:hover{
+    cursor: pointer;
+}
+.xmark-icon{
+    vertical-align: baseline;
+    font-size: 2rem;
+}
+.nav-bar-links{
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-bar-links > a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.nav-bar-links > a:hover{
+    background-color: var(--myGray);
+}
+.nav-bar-links > a > p{
+    font-weight: var(--bold);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.nav-bar-links > a > .caret-down-icon{
+    font-size: 2rem;
+}
+.flex-mobile-nav-bar > a > .sign-in{
+    width: 100%;
+    font-weight: var(--bold);
+}
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
 /*///////////////  home-main  ////////////////////////////*/
 .home-main{
     background-color: var(--myDarkGray);
@@ -242,16 +325,15 @@ i#left-menu-fist-icon{
 .song-of-nunu{
     background-image: url("/images/song-of-nunu-card-bg-1800.jpg");
 }
-
-/*---------- star-guardian-section ---------------------------*/
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*---------- star-guardian-section --------------------------------*/
 #star-guardian-section{
     height: 61rem;
     background-image: url("/images/main-photo.jpg");
-    transform: scale(1.05);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    opacity: 0.9;/*??*/
     display: flex;
     justify-content: start;
     padding: 6rem;
@@ -300,8 +382,8 @@ i#left-menu-fist-icon{
     top: 0.7rem;
     left: -1.4rem;
 }
-/*----------------------------------------------------------*/
-
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
 /*---------- what-happening-section ---------------------------*/
 #what-happening-section{
     background: radial-gradient(55% 180% at 5% 100%,rgb(25, 59, 94) 0,rgba(10,10,10,0) 75%,black 100%);
@@ -334,15 +416,23 @@ i#left-menu-fist-icon{
     align-items: flex-start;
     gap: 2.2rem;
 }
+.flex-events-container .fist-container{
+    position: absolute;
+    z-index: 5;
+    width: 3.1rem;
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+}
+.bg-black{
+    background-color: black;
+}
 .events-hero-link{
     flex: 1 1 60%;
 }
 .events-hero{
     height: 26vw;
     background-image: url("/images/hasan-colakoglu.png");
-}
-.events-hero > .fist-hand-icon{
-    position: absolute;
 }
 .hero-details{
     position: relative;
@@ -376,9 +466,9 @@ i#left-menu-fist-icon{
 .article:hover{
     background-color: var(--myGray);
 }
-.article > .fist-hand-icon{
-    position: absolute;
-    left: 96.5%;
+.article > .fist-container{
+    right: 1rem;
+    top: 1rem;
 }
 .article-wrapper{
     height: 100%;
@@ -414,7 +504,7 @@ i#left-menu-fist-icon{
     display: none;
 }
 /*----------------------------------------------------------*/
-
+/*-----------------------------------------------------------------*/
 /*---------- our-games-section ---------------------------*/
 #our-games-section{
     padding-top: 2rem;
@@ -454,7 +544,7 @@ i#left-menu-fist-icon{
 } */
 
 /*----------------------------------------------------------*/
-
+/*-----------------------------------------------------------------*/
 /*---------- we-are-hiring-section ---------------------------*/
 #we-are-hiring-section{
     min-height: 55rem;
@@ -496,36 +586,38 @@ i#left-menu-fist-icon{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    width: 88%;
 }
 .flex-riot-info > a:first-child, .flex-riot-info > a:last-child{
     flex: 1 1 50%;
 }
 .flex-riot-info > a > div{
-    height: 13rem;
+    height: 14rem;
     background-color: var(--myLightGray);
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
+    padding: 1rem;
 }
 .flex-riot-info > a > div > h1{
     text-align: center;
     color: var(--myBlack);
-    font-size: 4.5rem;
+    font-size: 4.8rem;
 }
 .flex-riot-info > a > div > p{
     text-align: center;
     color: var(--myGray);
     font-weight: var(--bold);
     letter-spacing: 1px;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 /* .open-positions{}
 .offices{} */
 .explore-careers{
     color: var(--myWhite);
-    width: 30rem;
-    height: 6rem;
+    width: 29rem;
+    height: 6.5rem;
     background-color: var(--myRed);
     border: none;
     border-radius: 2.5rem;
@@ -535,12 +627,10 @@ i#left-menu-fist-icon{
 }
 
 /*----------------------------------------------------------*/
-
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
-
-
+/*//////////////////////////////////////////////////////////*/
 /*/////////////   home-footer   //////////////////////////////*/
 .home-footer{
     background-color: var(--myDarkGray);
@@ -628,3 +718,5 @@ i#left-menu-fist-icon{
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/res-style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>Home | Riot Games</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -70,10 +71,53 @@
             </div>
     
             <div class="right-menu-tablet-container">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars bars-icon"></i>
             </div>
         </div>
     </header>
+
+
+    <!-- mobile-nav-bar -->
+    <nav class="mobile-nav-bar">
+        <div class="flex-mobile-nav-bar">
+
+            <div class="nav-bar-header">
+                <a href="" class="fist-container bg-white">
+                    <i class="fa-solid fa-hand-fist fist-hand-icon co-black"></i> 
+                </a>
+                <div class="close-menu-tablet-container">
+                    <i class="fa-solid fa-xmark xmark-icon"></i>
+                </div>
+            </div>
+
+            <div class="nav-bar-links">
+                <a class="who-we-are" href="html/error.html">
+                    <p>WHO WE ARE</p>
+                    <i class="fa-solid fa-caret-down caret-down-icon"></i>
+                </a>
+                <a class="work-with-us" href="html/error.html">
+                    <p>WORK WITH US</p>
+                    <i class="fa-solid fa-caret-down caret-down-icon"></i>
+                </a>
+                <a class="news" href="html/error.html">
+                    <p>NEWS</p>
+                </a>
+            </div>
+
+            <form method="" action="">
+                <label class="search-label">
+                    <input type="text" name="search" size="12" placeholder="SEARCH" class="search-input" autocomplete="off" value="">
+                    <button type="submit" class="search-button" tabindex="-1">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </label>
+            </form>
+            
+            <a target="_blank" href="html/error.html">
+                <button class="sign-in">SIGN IN</button>  
+            </a>
+        </div>
+    </nav>
     
 
     <!-- main-content -->
@@ -109,7 +153,9 @@
                 <!-- events-hero-link -->
                 <a target="_blank" class="events-hero-link" href="/html/error.html">
                     <div class="events-hero card">
-                        <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
+                        <div class="fist-container bg-black">
+                            <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
+                        </div>
                         <div class="hero-details">
                             <p>Hasan Colakoglu: From First Rioter in Turkey to Building Communities</p>
                             <div class="events-category">INSIDE RIOT</div>
@@ -121,7 +167,9 @@
                 <div class="grid-events-article">
                     <a target="_blank" href="/html/error.html">
                         <div class="article card">
-                            <i class="fa-solid fa-hand-fist fist-hand-icon"></i>
+                            <div class="fist-container bg-black">
+                                <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
+                            </div>
                             <div class="article-wrapper">
                                 <div class="article-details">
                                     <p>We're Deleting Some Very Inactive Accounts</p>
@@ -134,7 +182,9 @@
  
                     <a target="_blank" href="/html/error.html">
                         <div class="article card">
-                            <i class="fa-solid fa-hand-fist fist-hand-icon"></i>
+                            <div class="fist-container bg-black">
+                                <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
+                            </div>
                             <div class="article-wrapper">
                                 <div class="article-details">
                                     <p>The Grand Opening of the SoLa Technology and Entrepreneurship Center</p>
@@ -147,7 +197,9 @@
                     
                     <a target="_blank" href="/html/error.html">
                         <div class="article card">
-                            <i class="fa-solid fa-hand-fist fist-hand-icon"></i>
+                            <div class="fist-container bg-black">
+                                <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
+                            </div>
                             <div class="article-wrapper">
                                 <div class="article-details">
                                     <p>Annual Diversity and Inclusion (D&I) Progress Report - 2021</p>
@@ -160,7 +212,9 @@
                     
                     <a target="_blank" href="/html/error.html">
                         <div class="article card">
-                            <i class="fa-solid fa-hand-fist fist-hand-icon"></i>
+                            <div class="fist-container bg-black">
+                                <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
+                            </div>
                             <div class="article-wrapper">
                                 <div class="article-details">
                                     <p>Rainbow Rioters Find Their Lane: Maria Pentinen</p>
@@ -197,7 +251,10 @@
                                 <p class="league-of-legends-description">
                                     A TEAM-BASED STRATEGY GAME
                                 </p>
-                                <i></i>
+                                <div class="play-devices">
+                                    <i class="fa-brands fa-windows"></i>
+                                    <i class="fa-brands fa-apple"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -209,7 +266,9 @@
                                 <p class="valorent-description">
                                     A 5V5 CHARACTER-BASED TACTICAL SHOOTER
                                 </p>
-                                <i></i>
+                                <div class="play-devices">
+                                    <i class="fa-brands fa-windows"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -221,7 +280,11 @@
                         <div class="teamfight-tactics card">
                             <div class="second-game-content">
                                 <div class="teamfight-tactics-logo"></div>
-                                <i></i>
+                                <div class="play-devices">
+                                    <i class="fa-brands fa-windows"></i>
+                                    <i class="fa-brands fa-apple"></i>
+                                    <i class="fa-regular fa-mobile"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -230,7 +293,9 @@
                         <div class="league-of-legends-wr card">
                             <div class="second-game-content">
                                 <div class="league-of-legends-wr-logo"></div>
-                                <i></i>
+                                <div class="play-devices">
+                                    <i class="fa-regular fa-mobile"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -239,7 +304,10 @@
                         <div class="legends-of-runeterra card">
                             <div class="second-game-content">
                                 <div class="legends-of-runeterra-logo"></div>
-                                <i></i>
+                                <div class="play-devices">
+                                    <i class="fa-brands fa-windows"></i>
+                                    <i class="fa-regular fa-mobile"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -248,7 +316,12 @@
                         <div class="ruined-king card">
                             <div class="second-game-content">
                                 <div class="ruined-king-logo"></div>
-                                <i></i>
+                                <div class="play-devices">
+                                    <i class="fa-brands fa-windows"></i>
+                                    <i class="fa-regular fa-game-console-handheld"></i>
+                                    <i class="fa-brands fa-playstation"></i>
+                                    <i class="fa-brands fa-xbox"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -257,7 +330,11 @@
                         <div class="hextech-mayhem card">
                             <div class="second-game-content">
                                 <div class="hextech-mayhem-logo"></div>
-                                <i></i>
+                                <div class="play-devices">
+                                    <i class="fa-brands fa-windows"></i>
+                                    <i class="fa-regular fa-mobile"></i>
+                                    <i class="fa-regular fa-game-console-handheld"></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -266,7 +343,9 @@
                         <div class="convirgence card">
                             <div class="second-game-content">
                                 <div class="convirgence-logo"></div>
-                                <i></i>
+                                <div class="play-devices">
+                                    <i></i>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -275,7 +354,9 @@
                         <div class="song-of-nunu card">
                             <div class="second-game-content">
                                 <div class="song-of-nunu-logo"></div>
-                                <i></i>
+                                <div class="play-devices">
+                                    <i></i>
+                                </div>
                             </div>
                         </div>
                     </a>
