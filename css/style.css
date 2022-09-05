@@ -387,16 +387,14 @@ i#left-menu-fist-icon{
 /*---------- what-happening-section ---------------------------*/
 #what-happening-section{
     background: radial-gradient(55% 180% at 5% 100%,rgb(25, 59, 94) 0,rgba(10,10,10,0) 75%,black 100%);
+    padding-top: 3rem;
 }
-/* .what-happening-title{
-    border: solid 0.1px;
-} */
 .what-happening-title > h1{
     color: var(--myWhite);
     font-size: 4.4rem;
     letter-spacing: 1px;
 }
-.see-more-small{
+.see-more-small, .see-more-small-mobile{
     background-color: var(--myDarkGray);
     color: var(--myWhite);
     font-weight: var(--bold);
@@ -405,12 +403,11 @@ i#left-menu-fist-icon{
     height: 3.5rem;
     border-radius: 1rem;
 }
-.see-more-small:hover{
+.see-more-small:hover, .see-more-small-mobile:hover{
     cursor: pointer;
     background-color: var(--myGray);
 }
 .flex-events-container{
-    /* border: solid red 0.1px; */
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -433,6 +430,7 @@ i#left-menu-fist-icon{
 .events-hero{
     height: 26vw;
     background-image: url("/images/hasan-colakoglu.png");
+    position: relative;
 }
 .hero-details{
     position: relative;
@@ -450,13 +448,11 @@ i#left-menu-fist-icon{
     font-size: 1.5rem;
     padding-top: 0.5rem;
 }
-.grid-events-article{
-    border: solid 0.1px;
+.flex-events-article{
     flex: 1 1 40%;
     display: flex;
     flex-direction: column;
     gap: 1.1rem;
-    
 }
 .article{
     padding: unset;
@@ -483,9 +479,9 @@ i#left-menu-fist-icon{
     flex: 1 1 40%;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0 1rem 1rem 0;
 }
 .article-details > p{
-    /* border: solid red 0.1px; */
     font-size: 1.6rem;
     line-height: 2rem;
     font-weight: var(--bold);
@@ -496,10 +492,6 @@ i#left-menu-fist-icon{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-
-
-
 .see-more-small-mobile{
     display: none;
 }
@@ -510,9 +502,6 @@ i#left-menu-fist-icon{
     padding-top: 2rem;
     padding-bottom: 12rem;
 }
-/* .our-games-title{
-    border: solid 0.1px;
-} */
 .our-games-title > h1{
     color: var(--myWhite);
     font-size: 4.4rem;

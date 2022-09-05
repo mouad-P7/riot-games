@@ -1,11 +1,44 @@
+/*///////////////// medium-laptop /////////////////////////////*/
+@media screen and (max-width: 1280px){
+    #what-happening-section, #our-games-section{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .flex-events-container{
+        flex-direction: column;
+    }
+    .events-hero{
+        width: 92vw;
+        height: 45vw;
+    }
+    .hero-details{
+        top: 84%;
+    }
+    .flex-events-article{
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+    .article{
+        height: 13rem;
+    }
+    .article-wrapper{
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    .article-details{
+        flex: unset;
+    }
+    .article-photo{
+        flex: unset;
+        display: none;
+    }
+}
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
 /*///////////////// small-laptop /////////////////////////////*/
-
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*///////////////// tablet /////////////////////////////*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px){
     .right-menu-tablet-container{
         display: unset;
     }
@@ -16,14 +49,90 @@
         width: 18rem;
     }
     .right-home-header{
-    width: 10rem;
-    padding-right: 2rem;
+        width: 10rem;
+        padding-right: 2rem;
     }
     #star-guardian-section{
         justify-content: center;
+    }
+    .hero-details{
+        top: 76%;
     }
 }
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
+/*///////////////// tablet /////////////////////////////////*/
+@media screen and (max-width: 822px){
+    #what-happening-section{
+        padding-bottom: 8rem;
+    }
+    .what-happening-title{
+        justify-content: center;
+    }
+    .see-more-small{
+        display: none;
+        height: 4rem;
+    }
+    .flex-events-container{
+        align-items: center;
+    }
+    .flex-events-article{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .article{
+        width: 85vw;
+    }
+    .article-wrapper{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .article-details{
+        flex: 1 1 60%;
+    }
+    .article-photo{
+        display: inherit;
+        flex: 1 1 40%;
+    }
+    .see-more-small-mobile{
+        display: block;
+        border: none;
+        margin-top: 2rem;
+        height: 5rem;
+    }
+}
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*///////////////// mobile /////////////////////////////////*/
+@media screen and (max-width: 560px){
+    #what-happening-section, #our-games-section{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .what-happening-title > h1{
+        font-size: 3rem;
+    }
+    .hero-details{
+        top: 50%;
+    }
+    .hero-details > p{
+        font-size: 1.4rem;
+        line-height: normal;
+    }
+    
+}
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*///////////////// small-mobile ///////////////////////////*/
+@media screen and (max-width: 420px){}
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
