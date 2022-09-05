@@ -1,4 +1,4 @@
-/*/////////////   home-global   //////////////////////////////*/
+/*/////////////   home-global   ////////////////////////////////////////////*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 :root{
     --fontFamily: 'Poppins', sans-serif;
@@ -30,9 +30,7 @@
     scroll-behavior: smooth;
     max-width: 100%;
 }
-html{
-    font-size: 62.5%; /*10px*/
-}
+html{font-size: 62.5%; /*10px*/}
 body, header, main, section, footer {
     width: 100vw;
     overflow-x: hidden;
@@ -41,29 +39,29 @@ a{
     text-decoration: none;
     color: var(--myWhite);
 }
-i{/* ??? */
-    color: var(--myWhite);
-}
-.bg-white{
-    background-color: var(--myWhite);
-}
-.co-black{
-    color: var(--myBlack);
-}
+i{color: var(--myWhite);}/* ??? */
+.bg-white{background-color: var(--myWhite);}
+.co-black{color: var(--myBlack);}
 .fist-container{
     padding: var(--fistPadding);
     border-radius: var(--fistRadius);
     height: 2.8rem;
     z-index: 5;
 } 
-.fist-hand-icon{
-    font-size: var(--fistSize);
-}
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*///////////////  home-header  //////////////////////////////*/
+.fist-hand-icon{font-size: var(--fistSize);}
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*///////////////  home-header  ////////////////////////////////////////////*/
+
+
+
+
 .home-header{
     position: fixed;
     height: var(--headerHeight);
@@ -71,9 +69,7 @@ i{/* ??? */
     transition: background-color 0.2s ease;
     z-index: 10;
 }
-.scroll-down{
-    background-color: var(--myBlack);
-}
+.scroll-down{background-color: var(--myBlack);}
 .home-header, .home-header > *, .home-header > * > *, .nav-bar > a{
     display: flex;
     justify-content: space-between;
@@ -92,9 +88,7 @@ i{/* ??? */
     width: 38rem;
     padding-right: 4rem;
 }
-.home-header > * > *{
-    position: relative;
-}
+.home-header > * > *{position: relative;}
 .left-menu-container{
     width: 12rem;
     justify-content: flex-start;
@@ -108,35 +102,25 @@ i#left-menu-fist-icon{
     font-size: var(--menuFistSize);
     padding-left: 1rem;
 }
-#riot-games > p{
-    font-weight: var(--bold);
-}
+#riot-games > p{font-weight: var(--bold);}
 .home-header .fist-container{
     padding-left: 0.8rem;
     height: 3.8rem;
     width: 3.8rem;
 } 
-.home-header .fist-hand-icon{
-    font-size: 2.5rem;
-}
+.home-header .fist-hand-icon{font-size: 2.5rem;}
 .home-header p{
     color:var(--myWhite);
     line-height: 1.4rem;
     text-align: start;
 }
-.nav-bar{
-    width: 40rem;
-}
+.nav-bar{width: 40rem;}
 .nav-bar > a{
     padding: 7px 1rem;
     border-radius: 10px;
 }
-.nav-bar > a:hover{
-    background-color: var(--myGray);
-}
-.news{
-    width: 6.5rem;
-}
+.nav-bar > a:hover{background-color: var(--myGray);}
+.news{width: 6.5rem;}
 .nav-bar p{
     letter-spacing: 1px;
     padding-right: 1rem;
@@ -147,9 +131,7 @@ i#left-menu-fist-icon{
     height: 4.2rem;
     padding-left: 1rem;
 }
-.right-menu-tablet-container{
-    background-color: var(--myLightGray);
-}
+.right-menu-tablet-container{background-color: var(--myLightGray);}
 .network-icon-container:hover, .right-menu-tablet-container:hover{
     background-color: var(--myGray);
     cursor: pointer;
@@ -158,13 +140,12 @@ i#left-menu-fist-icon{
     vertical-align: baseline;
     font-size: 2.2rem;
 }
+.bars-icon{padding-top: 0.2rem;}
 .home-header form, .sign-in{
     padding: 5px 2rem;
     border-radius: 20px;
 }
-.home-header form{
-    border: solid var(--myWhite) 0.1px;
-}
+.home-header form{border: solid var(--myWhite) 0.1px;}
 .sign-in{
     border: thin black;
     background-color: var(--myRed);
@@ -181,11 +162,19 @@ i#left-menu-fist-icon{
     padding: 8px;
     display: none;
 }
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*//////////////mobile-nav-bar//////////////////////////////*/
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*//////////////mobile-nav-bar////////////////////////////////////////////*/
+
+
+
+
 .mobile-nav-bar{
     background-color: var(--myDarkGray);
     position: fixed;
@@ -195,9 +184,7 @@ i#left-menu-fist-icon{
     right: -47rem;
     transition: right 0.1s linear 0.1s;
 }
-.visible-nav-bar{
-    right: 0;
-}
+.visible-nav-bar{right: 0;}
 .flex-mobile-nav-bar{
     height: 55%;
     display: flex;
@@ -206,9 +193,7 @@ i#left-menu-fist-icon{
     align-items: center;
     padding: 2rem;
 }
-.flex-mobile-nav-bar > *{
-    width: 100%;
-}
+.flex-mobile-nav-bar > *{width: 100%;}
 .nav-bar-header{
     display: flex;
     justify-content: space-between;
@@ -219,9 +204,7 @@ i#left-menu-fist-icon{
     height: 100%;
     width: 4rem;
 }
-.nav-bar-header > a > .fist-hand-icon{
-    font-size: 3rem;
-}
+.nav-bar-header > a > .fist-hand-icon{font-size: 3rem;}
 .close-menu-tablet-container{
     background-color: var(--myGray);
     border-radius: 20%;
@@ -229,9 +212,7 @@ i#left-menu-fist-icon{
     height: 100%;
     width: 4rem;
 }
-.close-menu-tablet-container:hover{
-    cursor: pointer;
-}
+.close-menu-tablet-container:hover{cursor: pointer;}
 .xmark-icon{
     vertical-align: baseline;
     font-size: 2rem;
@@ -251,29 +232,31 @@ i#left-menu-fist-icon{
     padding: 1rem;
     border-radius: 0.5rem;
 }
-.nav-bar-links > a:hover{
-    background-color: var(--myGray);
-}
+.nav-bar-links > a:hover{background-color: var(--myGray);}
 .nav-bar-links > a > p{
     font-weight: var(--bold);
     font-size: 1.5rem;
     letter-spacing: 1px;
 }
-.nav-bar-links > a > .caret-down-icon{
-    font-size: 2rem;
-}
+.nav-bar-links > a > .caret-down-icon{font-size: 2rem;}
 .flex-mobile-nav-bar > a > .sign-in{
     width: 100%;
     font-weight: var(--bold);
 }
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*///////////////  home-main  ////////////////////////////*/
-.home-main{
-    background-color: var(--myDarkGray);
-}
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*///////////////  home-main  //////////////////////////////////////////*/
+
+
+
+
+.home-main{background-color: var(--myDarkGray);}
 .card{
     background-color: transparent;
     border: none;
@@ -291,18 +274,10 @@ i#left-menu-fist-icon{
     text-align: start;
     z-index: 1;
 }
-#article-img-1{
-    background-image: url("/images/riot-games-data-purge-deleting-old-accounts.png");
-}
-#article-img-2{
-    background-image: url("/images/riotgames-sola-technology-center-grand-opening-1.png");
-}
-#article-img-3{
-    background-image: url("/images/00-d-i-report-original-english.png");
-}
-#article-img-4{
-    background-image: url("/images/rg-rainbowrioters-maria-pentinen.png");
-}
+#article-img-1{background-image: url("/images/riot-games-data-purge-deleting-old-accounts.png");}
+#article-img-2{background-image: url("/images/riotgames-sola-technology-center-grand-opening-1.png");}
+#article-img-3{background-image: url("/images/00-d-i-report-original-english.png");}
+#article-img-4{background-image: url("/images/rg-rainbowrioters-maria-pentinen.png");}
 #what-happening-section, #our-games-section{
     padding-top: 5rem;
     padding-bottom: 10rem;
@@ -315,36 +290,35 @@ i#left-menu-fist-icon{
     align-items: center;
     height: 18rem;
 }
-.league-of-legends{
-    background-image: url("/images/lol-card-bg-1800.jpg");
-}
-.valorant{
-    background-image: url("/images/val-card-bg-1800-08-22.png");
-}
-.teamfight-tactics{
-    background-image: url("/images/tft-card-bg-1800.jpg");
-}
-.league-of-legends-wr{
-    background-image: url("/images/lol-wildrift-productimage.png");
-}
-.legends-of-runeterra{
-    background-image: url("/images/legends-of-runeterra-productimage.png");
-}
-.ruined-king{
-    background-image: url("/images/ruined-king-productimage.png");
-}
-.hextech-mayhem{
-    background-image: url("/images/hextetch-mayhem-card-bg-1800.jpg");
-}
-.convirgence{
-    background-image: url("/images/convrgence-productimage.png");
-}
-.song-of-nunu{
-    background-image: url("/images/song-of-nunu-card-bg-1800.jpg");
-}
-/*-----------------------------------------------------------------*/
-/*-----------------------------------------------------------------*/
-/*---------- star-guardian-section --------------------------------*/
+.league-of-legends{background-image: url("/images/lol-card-bg-1800.jpg");}
+.league-of-legends-logo{background-image: url("/images/lol-logotype.png");}
+.valorant{background-image: url("/images/val-card-bg-1800-08-22.png");}
+.valorent-logo{background-image: url("/images/valorant-logotype.png");}
+.teamfight-tactics{background-image: url("/images/tft-card-bg-1800.jpg");}
+.teamfight-tactics-logo{background-image: url("/images/tft-logotype-2021.png");}
+.league-of-legends-wr{background-image: url("/images/lol-wildrift-productimage.png");}
+.league-of-legends-wr-logo{background-image: url("/images/lol-wildrift-logotype.png");}
+.legends-of-runeterra{background-image: url("/images/legends-of-runeterra-productimage.png");}
+.legends-of-runeterra-logo{background-image: url("/images/legends-of-runeterra-logotype.png");}
+.ruined-king{background-image: url("/images/ruined-king-productimage.png");}
+.ruined-king-logo{background-image: url("/images/ruined-king-logotype.png");}
+.hextech-mayhem{background-image: url("/images/hextetch-mayhem-card-bg-1800.jpg");}
+.hextech-mayhem-logo{background-image: url("/images/hextech-mayhem-logotype.png");}
+.convirgence{background-image: url("/images/convrgence-productimage.png");}
+.convirgence-logo{background-image: url("/images/convrgence-logotype.png");}
+.song-of-nunu{background-image: url("/images/song-of-nunu-card-bg-1800.jpg");}
+.song-of-nunu-logo{background-image: url("/images/songofnunu-logotype.png");}
+
+
+
+
+/*------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+/*---------- star-guardian-section ----------------------------------------*/
+
+
+
+
 #star-guardian-section{
     height: 61rem;
     background-image: url("/images/main-photo.jpg");
@@ -368,17 +342,12 @@ i#left-menu-fist-icon{
     padding-top: 2rem;
     padding-bottom: 6rem;
 }
-
-.star-guardian-content > img{
-    width: 36rem;
-}
+.star-guardian-content > img{width: 36rem;}
 .star-guardian-content > p{
     font-size: 2.8rem;
     line-height: 2.7rem;
 }
-.star-guardian-content > a{
-    position: relative;
-}
+.star-guardian-content > a{position: relative;}
 .see-more{
     background-color: var(--myBlue);
     width: 23rem;
@@ -399,9 +368,17 @@ i#left-menu-fist-icon{
     top: 0.7rem;
     left: -1.4rem;
 }
-/*-----------------------------------------------------------------*/
-/*-----------------------------------------------------------------*/
-/*---------- what-happening-section ---------------------------*/
+
+
+
+
+/*------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/
+/*---------- what-happening-section --------------------------------------*/
+
+
+
+
 #what-happening-section{
     background: radial-gradient(55% 180% at 5% 100%,rgb(25, 59, 94) 0,rgba(10,10,10,0) 75%,black 100%);
     padding-top: 3rem;
@@ -438,12 +415,8 @@ i#left-menu-fist-icon{
     display: flex;
     justify-content: center;
 }
-.bg-black{
-    background-color: black;
-}
-.events-hero-link{
-    flex: 1 1 60%;
-}
+.bg-black{background-color: black;}
+.events-hero-link{flex: 1 1 60%;}
 .events-hero{
     height: 26vw;
     background-image: url("/images/hasan-colakoglu.png");
@@ -509,49 +482,110 @@ i#left-menu-fist-icon{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.see-more-small-mobile{
-    display: none;
-}
-/*----------------------------------------------------------*/
-/*-----------------------------------------------------------------*/
-/*---------- our-games-section ---------------------------*/
+.see-more-small-mobile{display: none;}
+
+
+
+
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*---------- our-games-section -------------------------------------------*/
+
+
+
+
 #our-games-section{
     padding-top: 2rem;
     padding-bottom: 12rem;
 }
 .our-games-title > h1{
     color: var(--myWhite);
-    font-size: 4.4rem;
+    font-size: 3rem;
     letter-spacing: 1px;
 }
 .flex-games{
-    border: solid 0.1px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-.flex-games > * > * > .card, .flex-games > * > *{
-    aspect-ratio: 1 / 0.5;
-}
-.grid-main-games{
+.grid-main-games, .grid-second-games{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     gap: 2rem 1rem;
 }
-.grid-second-games{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    gap: 2rem 1rem;
+.grid-main-games{grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));}
+.grid-second-games{grid-template-columns: repeat(auto-fit, minmax(35.5rem, 1fr));}
+.flex-games .card{
+    aspect-ratio: 1 / 0.45;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+.main-game-content, .second-game-content{
+    flex: 0 0 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-game-content{
+    justify-content: space-around;
+    row-gap: 1rem;
+}
+.second-game-content{
+    justify-content: center;
+    row-gap: 20%;
+}
+.game-logo{
+    aspect-ratio: 1 / 1.2;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.main-game-content > p{
+    font-size: 1rem;
+    font-weight: var(--bold);
+    color: rgb(184, 183, 183);
+    text-align: center;
+}
+.play-devices{
+    background-color: var(--myLightGray);
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+.main-game-content .one-device{width: 2.5rem;}
+.main-game-content .two-devices{width: 5rem;}
+.main-game-content .three-devices{width: 7.5rem;}
+.main-game-content .four-devices{width: 10rem;}
+.main-game-content .play-devices{height: 3.5rem;}
+
+.second-game-content .one-device{width: 2.5rem;}
+.second-game-content .two-devices{width: 3.4rem;}
+.second-game-content .three-devices{width: 5.1rem;}
+.second-game-content .four-devices{width: 6.8rem;}
+.second-game-content .play-devices{height: 2.5rem;}
+
+.main-game-content i{font-size: 1.3rem;}
+.second-game-content i{font-size: 0.9rem;}
 /* .second-game:last-child {
     justify-self: center;
     width: calc(100% / 3 - 1rem);
     grid-column-start: span 3;
 } */
 
-/*----------------------------------------------------------*/
-/*-----------------------------------------------------------------*/
-/*---------- we-are-hiring-section ---------------------------*/
+
+
+
+/*--------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*---------- we-are-hiring-section ----------------------------------*/
+
+
+
+
 #we-are-hiring-section{
     min-height: 55rem;
     /* width: 100vw; */
@@ -577,9 +611,7 @@ i#left-menu-fist-icon{
     justify-content: space-between;
     align-items: center;
 }
-.flex-we-are-hiring > h1{
-    font-size: 4.5rem;
-}
+.flex-we-are-hiring > h1{font-size: 4.5rem;}
 .flex-we-are-hiring > p{
     color: var(--myGray);
     width: 60rem;
@@ -594,9 +626,7 @@ i#left-menu-fist-icon{
     gap: 2rem;
     width: 88%;
 }
-.flex-riot-info > a:first-child, .flex-riot-info > a:last-child{
-    flex: 1 1 50%;
-}
+.flex-riot-info > a:first-child, .flex-riot-info > a:last-child{flex: 1 1 50%;}
 .flex-riot-info > a > div{
     height: 14rem;
     background-color: var(--myLightGray);
@@ -632,12 +662,19 @@ i#left-menu-fist-icon{
     letter-spacing: 1px;
 }
 
-/*----------------------------------------------------------*/
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*//////////////////////////////////////////////////////////*/
-/*/////////////   home-footer   //////////////////////////////*/
+
+
+
+/*----------------------------------------------------------------------*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*/////////////   home-footer   ////////////////////////////////////////////*/
+
+
+
+
 .home-footer{
     background-color: var(--myDarkGray);
     padding: 0rem 2rem;
@@ -655,12 +692,8 @@ i#left-menu-fist-icon{
     column-gap: 4rem;
     padding: 4rem 0;
 }
-.footer-row1 *{
-    font-size: 1.2rem;
-}
-.footer-fist > a > .fist-hand-icon{
-    font-size: 4rem;
-}
+.footer-row1 *{font-size: 1.2rem;}
+.footer-fist > a > .fist-hand-icon{font-size: 4rem;}
 .footer-fist > a > .fist-hand-icon:hover{
     cursor: pointer;
     color: var(--myRed);
@@ -678,9 +711,7 @@ i#left-menu-fist-icon{
     text-decoration: underline;
     color: var(--myWhite);
 }
-.social-media{
-    width: 20rem;
-}
+.social-media{width: 20rem;}
 .social-media > a > i{
     column-gap: 4rem;
     font-size: 2rem;
@@ -696,10 +727,8 @@ i#left-menu-fist-icon{
     background-color: var(--myGray);
     height: 0.2rem;
 }
-.footer-row2 *{
-    font-size: 1.1rem;
-}
-.copie-rights{}
+.footer-row2 *{font-size: 1.1rem;}
+/* .copie-rights{} */
 .cookie:hover{
     text-decoration: underline;
     color: var(--myWhite);
@@ -709,19 +738,22 @@ i#left-menu-fist-icon{
     width: 1rem;
     font-size: 3rem;
 }
-.mobile-break{
-    display: none;
-}
-.to-the-surface{
-    font-size: 1.5rem;
-}
-.to-the-surface:hover{}
+.mobile-break{display: none;}
+.to-the-surface{font-size: 1.5rem;}
+/* .to-the-surface:hover{} */
 .to-the-surface > i{
     padding-left: 1rem;
     font-size: 1.5rem;
 }
+
+
+
+
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
+
+
+
 
