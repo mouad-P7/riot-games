@@ -30,7 +30,7 @@
     scroll-behavior: smooth;
     max-width: 100%;
 }
-html{font-size: 62.5%; /*10px*/}
+html{font-size: 62.5%;}/* 1rem = 10px */
 body, header, main, section, footer {
     width: 100vw;
     overflow-x: hidden;
@@ -588,7 +588,6 @@ i#left-menu-fist-icon{
 
 #we-are-hiring-section{
     min-height: 55rem;
-    /* width: 100vw; */
     display: flex;
     /* flex-wrap: wrap; */
 }
@@ -626,30 +625,28 @@ i#left-menu-fist-icon{
     gap: 2rem;
     width: 88%;
 }
-.flex-riot-info > a:first-child, .flex-riot-info > a:last-child{flex: 1 1 50%;}
-.flex-riot-info > a > div{
-    height: 14rem;
+.flex-riot-info > a{flex: 1 1 50%;}
+.flex-riot-info .card{
+    height: 17rem;
     background-color: var(--myLightGray);
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     padding: 1rem;
 }
-.flex-riot-info > a > div > h1{
+.flex-riot-info h1{
     text-align: center;
     color: var(--myBlack);
     font-size: 4.8rem;
 }
-.flex-riot-info > a > div > p{
+.flex-riot-info p{
     text-align: center;
     color: var(--myGray);
     font-weight: var(--bold);
     letter-spacing: 1px;
     font-size: 2.5rem;
 }
-/* .open-positions{}
-.offices{} */
 .explore-careers{
     color: var(--myWhite);
     width: 29rem;

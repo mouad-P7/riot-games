@@ -97,6 +97,35 @@
     .main-game-content .four-devices{width: 6.8rem;}
     .main-game-content .play-devices{height: 2.5rem;}
     .main-game-content i{font-size: 0.9rem;}
+
+
+
+    #we-are-hiring-section{
+        flex-direction: column;
+    }
+    .monster-photo{
+        aspect-ratio: 1 / 0.8;
+        width: 100vw;
+    }
+    .flex-we-are-hiring{
+        height: 50rem;
+        width: 100%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .flex-we-are-hiring > h1{font-size: 3rem;}
+    .flex-we-are-hiring > p{width: 60rem;}
+    .flex-riot-info{
+        gap: 1rem;
+        width: 95%;
+    }
+    .flex-riot-info > a{flex: 1 1 50%;}
+    .flex-riot-info .card{
+        height: 12rem;
+        padding: 1rem;
+    }
+    .flex-riot-info p{font-size: 1.5rem;}
+    .explore-careers{width: 85vw;}    
 }
 
 
