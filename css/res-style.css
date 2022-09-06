@@ -49,6 +49,13 @@
     #star-guardian-section{justify-content: center;}
     .hero-details{top: 76%;}
     .grid-main-games{grid-template-columns: repeat(auto-fit, minmax(35.5rem, 1fr));}
+    .home-footer > *{flex-direction: column;}
+    .footer-row1{min-height: 30rem;}
+    .footer-links{justify-content: center;}
+    .mobile-break{
+        display: block;
+        margin: 4rem 0;
+    }
 }
 
 
@@ -97,9 +104,6 @@
     .main-game-content .four-devices{width: 6.8rem;}
     .main-game-content .play-devices{height: 2.5rem;}
     .main-game-content i{font-size: 0.9rem;}
-
-
-
     #we-are-hiring-section{
         flex-direction: column;
     }
@@ -154,21 +158,14 @@
     .grid-main-games{grid-template-columns: 1fr;}
     .grid-second-games{grid-template-columns: 1fr;}
     .main-game-content > p{display: none;}
+    .footer-row1{min-height: 55rem;}
+    .footer-links{flex-direction: column;}
+    .copie-rights{
+        flex-direction: column;
+        row-gap: 5rem;
+    }
+    .pipe{display: none;}
 }
-
-
-
-
-/*////////////////////////////////////////////////////////////////////////*/
-/*////////////////////////////////////////////////////////////////////////*/
-/*////////////////////////////////////////////////////////////////////////*/
-/*////////////////////////////////////////////////////////////////////////*/
-/*///////////////// small-mobile /////////////////////////////////////////*/
-
-
-
-
-@media screen and (max-width: 420px){}
 
 
 
