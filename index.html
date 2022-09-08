@@ -20,7 +20,7 @@
 
         <!-- left-home-header -->
         <div class="left-home-header">
-            <a target="_blank" href="/html/error.html" class="left-menu-container">
+            <a href="/html/error.html" class="left-menu-container">
                 <i id="left-menu-fist-icon" class="fa-solid fa-hand-fist"></i>
                 <div id="riot-games">
                     <p>RIOT</p>
@@ -34,26 +34,138 @@
             </a>
     
             <div class="nav-bar">
-                <a class="who-we-are" href="html/error.html">
-                    <p>WHO WE ARE</p>
-                    <i class="fa-solid fa-caret-down caret-down-icon"></i>
-                </a>
-                <a class="work-with-us" href="html/error.html">
-                    <p>WORK WITH US</p>
-                    <i class="fa-solid fa-caret-down caret-down-icon"></i>
-                </a>
-                <a class="news" href="html/error.html">
-                    <p>NEWS</p>
-                </a>
+                <div class="dropdown-container">
+                    <button class="who-we-are">
+                        <p>WHO WE ARE</p>
+                        <i class="fa-solid fa-caret-down caret-down-icon"></i>
+                    </button>
+                    <div class="dropdown-space"></div>
+                    <div class="dropdown drop1">
+                        <a class="dropdown-element" href="https://www.riotgames.com/en/who-we-are">About Riot</a>
+                        <a class="dropdown-element" href="https://www.riotgames.com/en/diversity-and-inclusion">Diversity & Inclusion</a>
+                        <a class="dropdown-element" href="https://www.riotgames.com/en/who-we-are/social-impact">Social Impact</a>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <button class="work-with-us">
+                        <p>WORK WITH US</p>
+                        <i class="fa-solid fa-caret-down caret-down-icon"></i>
+                    </button>
+                    <div class="dropdown-space"></div>
+                    <div class="dropdown drop2">
+                        <a class="dropdown-element" href="https://www.riotgames.com/en/work-with-us">Jobs</a>
+                        <a class="dropdown-element" href="https://www.riotgames.com/en/work-with-us/offices">Offices</a>
+                        <a class="dropdown-element" href="https://www.riotgames.com/en/work-with-us/life-at-riot">Life At Riot</a>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <button class="news">
+                        <p><a href="https://www.riotgames.com/en/news">NEWS</a></p>
+                    </button>
+                    <div class="dropdown-space"></div>
+                    <div class="dropdown drop3"></div>
+                </div>
             </div>
         </div>
 
         <!-- right-home-header -->
         <div class="right-home-header">
-            <div class="network-icon-container">
-                <a>
-                    <i class="fa-solid fa-globe network-icon"></i>
-                </a>
+            <div class="dropdown-container">
+                <button class="network-icon-container">
+                    <a><i class="fa-solid fa-globe network-icon"></i></a>
+                </button>
+                <div class="dropdown-space"></div>
+                <!-- <div class="dropdown language-dropdown">
+                    <div class="lang-container">
+                        <a class="lang">ENGLISH (NA)</a>
+                        <i class="fa-solid fa-check  check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">INDONESIAN</a>
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">MALAYSIAN</a> 
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">PORTUGUES</a>
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">ČESTINA</a> 
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">FRANCAIS</a>
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">DEUTSCH</a> 
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">Ελληνικά</a>
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">MAGYAR</a> 
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">ITALIANO</a>
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">日本語</a> 
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">한국어</a>
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">ESPANOL (LATAM)</a>
+                        <i class="fa-solid fa-check check-icon"></i> 
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">POLSKI</a>
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">Română</a> 
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">Русский</a>
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">简体中文</a> 
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">ESPANOL (EUW)</a>
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">ภาษาไทย</a> 
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">繁體中文</a>
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">Türkçe</a> 
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container">
+                        <a class="lang">Tiếng Việt</a>
+                        <i class="fa-solid fa-check check-icon"></i>
+                    </div>
+                    <div class="lang-container"></div>
+                </div> -->
             </div>
     
             <div class="right-menu-laptop-container">
@@ -65,7 +177,7 @@
                         </button>
                     </label>
                 </form>
-                <a target="_blank" href="html/error.html">
+                <a href="https://auth.riotgames.com/login#client_id=prod-xsso-riotgames&code_challenge=Stmp4A1rx7DRYsToURfn5jaYTR59osgt8Ndt5u1p3is&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fxsso.riotgames.com%2Fredirect&response_type=code&scope=openid%20account&state=efeb3f47b14d66dda9339ba235">
                     <button class="sign-in">SIGN IN</button>  
                 </a>
             </div>
@@ -118,7 +230,10 @@
             </a>
         </div>
     </nav>
-    
+
+
+    <!-- flex-menu -->
+
 
     <!-- main-content -->
     <main class="home-main">
@@ -129,7 +244,7 @@
             <div class="star-guardian-content">
                 <img alt="star-guardian-photo" src="/images/star-guardian-logo.png">
                 <p>Learn more about everything Star Guardian has to offer this summer!</p>
-                <a target="_blank" href="/html/error.html">
+                <a href="https://www.riotgames.com/en/news">
                     <button class="see-more"><i class="fa-solid fa-circle-arrow-right right-arrow-icon"></i>See More</button>
                 </a>
             </div>
@@ -142,7 +257,7 @@
             <!-- what-happening-title -->
             <div class="what-happening-title">
                 <h1>What's happening?</h1>
-                <a target="_blank" href="/html/error.html">
+                <a href="https://www.riotgames.com/en/news">
                     <button class="see-more-small">SEE MORE</button>
                 </a>
             </div>
@@ -151,7 +266,7 @@
             <div class="flex-events-container">
 
                 <!-- events-hero-link -->
-                <a target="_blank" class="events-hero-link" href="/html/error.html">
+                <a class="events-hero-link" href="/html/error.html">
                     <div class="events-hero card">
                         <div class="fist-container bg-black">
                             <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
@@ -165,7 +280,7 @@
 
                 <!-- flex-events-article -->
                 <div class="flex-events-article">
-                    <a target="_blank" href="/html/error.html">
+                    <a href="/html/error.html">
                         <div class="article card">
                             <div class="fist-container bg-black">
                                 <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
@@ -180,7 +295,7 @@
                         </div>  
                     </a>
  
-                    <a target="_blank" href="/html/error.html">
+                    <a href="/html/error.html">
                         <div class="article card">
                             <div class="fist-container bg-black">
                                 <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
@@ -195,7 +310,7 @@
                         </div>  
                     </a>
                     
-                    <a target="_blank" href="/html/error.html">
+                    <a href="/html/error.html">
                         <div class="article card">
                             <div class="fist-container bg-black">
                                 <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
@@ -210,7 +325,7 @@
                         </div>  
                     </a>
                     
-                    <a target="_blank" href="/html/error.html">
+                    <a href="/html/error.html">
                         <div class="article card">
                             <div class="fist-container bg-black">
                                 <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
@@ -244,7 +359,7 @@
 
                 <!-- grid-main-games -->
                 <div class="grid-main-games">
-                    <a target="_blank" href="html/error.html" class="main-game">
+                    <a target="_blank" href="https://www.leagueoflegends.com/en-gb/" class="main-game">
                         <div class="league-of-legends card">
                             <div class="main-game-content">
                                 <div class="league-of-legends-logo game-logo"></div>
@@ -259,7 +374,7 @@
                         </div>
                     </a>
 
-                    <a target="_blank" href="html/error.html" class="main-game">
+                    <a target="_blank" href="https://playvalorant.com/" class="main-game">
                         <div class="valorant card">
                             <div class="main-game-content">
                                 <div class="valorent-logo game-logo"></div>
@@ -276,7 +391,7 @@
 
                 <!-- grid-second-games -->
                 <div class="grid-second-games">
-                    <a target="_blank" href="html/error.html" class="second-game">
+                    <a target="_blank" href="https://teamfighttactics.leagueoflegends.com/en-gb/" class="second-game">
                         <div class="teamfight-tactics card">
                             <div class="second-game-content">
                                 <div class="teamfight-tactics-logo game-logo"></div>
@@ -289,7 +404,7 @@
                         </div>
                     </a>
 
-                    <a target="_blank" href="html/error.html" class="second-game">
+                    <a target="_blank" href="https://wildrift.leagueoflegends.com/en-us/" class="second-game">
                         <div class="league-of-legends-wr card">
                             <div class="second-game-content">
                                 <div class="league-of-legends-wr-logo game-logo"></div>
@@ -300,7 +415,7 @@
                         </div>
                     </a>
 
-                    <a target="_blank" href="html/error.html" class="second-game">
+                    <a target="_blank" href="https://playruneterra.com/en-us/" class="second-game">
                         <div class="legends-of-runeterra card">
                             <div class="second-game-content">
                                 <div class="legends-of-runeterra-logo game-logo"></div>
@@ -312,7 +427,7 @@
                         </div>
                     </a>
 
-                    <a target="_blank" href="html/error.html" class="second-game">
+                    <a target="_blank" href="https://ruinedking.com/en-us/" class="second-game">
                         <div class="ruined-king card">
                             <div class="second-game-content">
                                 <div class="ruined-king-logo game-logo"></div>
@@ -326,7 +441,7 @@
                         </div>
                     </a>
 
-                    <a target="_blank" href="html/error.html" class="second-game">
+                    <a target="_blank" href="https://hextechmayhem.com/en-gb/" class="second-game">
                         <div class="hextech-mayhem card">
                             <div class="second-game-content">
                                 <div class="hextech-mayhem-logo game-logo"></div>
@@ -339,7 +454,7 @@
                         </div>
                     </a>
 
-                    <a target="_blank" href="html/error.html" class="second-game">
+                    <a target="_blank" href="https://convrgencegame.com/" class="second-game">
                         <div class="convirgence card">
                             <div class="second-game-content">
                                 <div class="convirgence-logo game-logo"></div>
@@ -350,7 +465,7 @@
                         </div>
                     </a>
 
-                    <a target="_blank" href="html/error.html" class="second-game">
+                    <a target="_blank" href="https://songofnunu.com/en-gb/" class="second-game">
                         <div class="song-of-nunu card">
                             <div class="second-game-content">
                                 <div class="song-of-nunu-logo game-logo"></div>
@@ -371,20 +486,20 @@
                 <h1>We're hiring!</h1>
                 <p>Team up with Riot to forge your path and craft unforgettable experiences for players</p>
                 <div class="flex-riot-info">
-                    <a target="_blank" href="/html/error.html">
+                    <a target="_blank" href="https://www.riotgames.com/en/work-with-us">
                         <div class="open-positions card">
                             <h1>472</h1>
                             <p>Open positions</p>
                         </div>
                     </a>
-                    <a target="_blank" href="/html/error.html">
+                    <a target="_blank" href="https://www.riotgames.com/en/work-with-us/offices">
                         <div class="offices card">
                             <h1>24</h1>
                             <p>Offices</p>
                         </div>
                     </a>
                 </div>
-                <a target="_blank" href="/html/error.html">
+                <a target="_blank" href="https://www.riotgames.com/en/work-with-us">
                     <button class="explore-careers">Explore Careers</button>
                 </a>
             </div>
@@ -405,16 +520,16 @@
             </div>
 
             <div class="footer-links">
-                <a href="html/error.html" target="_blank">PRESS</a>
-                <a href="html/error.html" target="_blank">SECURITY</a>
-                <a href="html/error.html" target="_blank">LEGAL</a>
-                <a href="html/error.html" target="_blank">LEADERSHIP</a>
-                <a href="html/error.html" target="_blank">CANDIDATE PRIVACY</a>
-                <a href="html/error.html" target="_blank">TERMS OF SERVICE</a>
-                <a href="html/error.html" target="_blank">PRIVACY NOTICE</a>
-                <a href="html/error.html" target="_blank">PLAYER SUPPORT</a>
-                <a href="html/error.html" target="_blank">E-VERIFY</a>
-                <a href="html/error.html" target="_blank">ACCESSIBILITY</a>
+                <a href="https://www.riotgames.com/en/press">PRESS</a>
+                <a href="https://www.riotgames.com/en/security">SECURITY</a>
+                <a href="https://www.riotgames.com/en/legal">LEGAL</a>
+                <a href="https://www.riotgames.com/en/who-we-are/riot-games-leadership">LEADERSHIP</a>
+                <a href="https://www.riotgames.com/en/candidate-privacy">CANDIDATE PRIVACY</a>
+                <a href="https://www.riotgames.com/en/terms-of-service">TERMS OF SERVICE</a>
+                <a href="https://www.riotgames.com/en/privacy-notice">PRIVACY NOTICE</a>
+                <a href="https://support.riotgames.com/hc/en-us">PLAYER SUPPORT</a>
+                <a href="https://www.riotgames.com/en/e-verify-right-to-work">E-VERIFY</a>
+                <a href="https://www.riotgames.com/en/accessibility">ACCESSIBILITY</a>
             </div>
 
             <div class="social-media">
@@ -438,7 +553,7 @@
         <!-- footer-row2 -->
         <div class="footer-row2">
             <div class="copie-rights">
-                <a class="cookie" href="html/error.html" target="_blank">
+                <a class="cookie">
                     Cookie Preferences
                 </a>
                 <div class="all-rights">
