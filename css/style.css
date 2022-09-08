@@ -274,7 +274,6 @@ i#left-menu-fist-icon{
     right: -47rem;
     transition: right 0.1s linear 0.1s;
 }
-.visible-nav-bar{right: 0;}
 .flex-mobile-nav-bar{
     height: 55%;
     display: flex;

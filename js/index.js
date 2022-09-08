@@ -10,13 +10,15 @@ $(document).ready(function(){
     });
 
     $('.right-menu-tablet-container').click(function(){
-        $('.mobile-nav-bar').addClass('visible-nav-bar');
-        $('.home-body').css({'opacity':'0.7'});
+        $('.mobile-nav-bar').css({'right':'0'});
+        $('.home-header').css({'opacity':'0.98'});
+        $('.home-main > *').css({'opacity':'0.4'});
     });
     
     $('.close-menu-tablet-container').click(function(){
-        $('.mobile-nav-bar').removeClass('visible-nav-bar');
-        $('.home-body').css({'opacity':'1'});
+        $('.mobile-nav-bar').css({'right':'-47rem'});
+        $('.home-header').css({'opacity':'1'});
+        $('.home-main > *').css({'opacity':'1'});
     });
 
     $('.dropdown-container').hover(function(){
