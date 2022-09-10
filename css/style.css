@@ -122,6 +122,7 @@ i#left-menu-fist-icon{
     height: 2rem;
     width: 14rem;
 }
+.nav-bar .dropdown-space{cursor: pointer;}
 .nav-bar button, .dropdown > a{
     padding: 7px 1rem;
     border-radius: 10px;
@@ -165,7 +166,7 @@ i#left-menu-fist-icon{
     padding: 0;
     width: 6.5rem !important;
 }
-.nav-bar .dropdown > a{
+.dropdown > a{
     font-weight: var(--medium);
     font-size: 1.2rem;
     letter-spacing: 1px;
@@ -277,11 +278,12 @@ i#left-menu-fist-icon{
     width: 45rem;
 }
 .flex-mobile-nav-bar{
-    height: 55%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    row-gap: 3rem;
     padding: 2rem;
 }
 .flex-mobile-nav-bar > *{width: 100%;}
@@ -309,13 +311,15 @@ i#left-menu-fist-icon{
     font-size: 2rem;
 }
 .nav-bar-links{
-    height: 16rem;
+    min-height: 16rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    row-gap: 1rem;
 }
-.nav-bar-links > a{
+.nav-bar-links .dropdown-container{width: 100%;}
+.nav-bar-links .dropdown-container > a{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -323,14 +327,29 @@ i#left-menu-fist-icon{
     padding: 1rem;
     border-radius: 0.5rem;
 }
-.nav-bar-links > a:hover{background-color: var(--myGray);}
-.nav-bar-links > a > p{
+.nav-bar-links a:hover{
+    background-color: var(--myGray);
+    cursor: pointer;
+}
+.nav-bar-links a > p{
     font-weight: var(--bold);
     font-size: 1.5rem;
     letter-spacing: 1px;
 }
-.nav-bar-links > a > .caret-down-icon{font-size: 2rem;}
-.flex-mobile-nav-bar > a > .sign-in{
+.nav-bar-links .caret-down-icon{font-size: 2rem;}
+.nav-bar-links .dropdown{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    row-gap: 0.6rem;
+}
+.nav-bar-links .dropdown > a{
+    font-size: 1.3rem;
+    padding: 1.2rem 1rem;
+}
+/* .mobile-nav-bar form{} */
+.mobile-nav-bar .sign-in{
     width: 100%;
     font-weight: var(--bold);
 }
@@ -623,6 +642,7 @@ i#left-menu-fist-icon{
 }
 .bg-black{background-color: black;}
 .events-hero-link{flex: 1 1 60%;}
+.events-hero-link:hover{cursor: pointer;}
 .events-hero{
     height: 26vw;
     background-image: url("/images/hasan-colakoglu.png");
@@ -657,6 +677,7 @@ i#left-menu-fist-icon{
 }
 .article:hover{
     background-color: var(--myGray);
+    cursor: pointer;
 }
 .article > .fist-container{
     right: 1rem;
@@ -795,10 +816,8 @@ i#left-menu-fist-icon{
 #we-are-hiring-section{
     min-height: 55rem;
     display: flex;
-    /* flex-wrap: wrap; */
 }
 .monster-photo{
-    /* flex: 1 1 50%; */
     width: 50vw;
     background-image: url("/images/annie.jpg");
     background-repeat: no-repeat;
@@ -806,7 +825,6 @@ i#left-menu-fist-icon{
     background-size: cover;
 }
 .flex-we-are-hiring{
-    /* flex: 1 1 50%; */
     width: 50vw;
     background-color: var(--myDarkWhite);
     padding-top: 7rem;
@@ -864,6 +882,7 @@ i#left-menu-fist-icon{
     font-weight: var(--bold);
     letter-spacing: 1px;
 }
+.explore-careers:hover{cursor: pointer;}
 
 
 
@@ -961,7 +980,3 @@ i#left-menu-fist-icon{
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
 /*//////////////////////////////////////////////////////////*/
-
-
-
-

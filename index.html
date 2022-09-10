@@ -27,7 +27,7 @@
 
         <!-- left-home-header -->
         <div class="left-home-header">
-            <a href="/html/error.html" class="left-menu-container">
+            <a class="left-menu-container">
                 <i id="left-menu-fist-icon" class="fa-solid fa-hand-fist"></i>
                 <div id="riot-games">
                     <p>RIOT</p>
@@ -216,17 +216,33 @@
             </div>
 
             <div class="nav-bar-links">
-                <a class="who-we-are" href="html/error.html">
-                    <p>WHO WE ARE</p>
-                    <i class="fa-solid fa-caret-down caret-down-icon"></i>
-                </a>
-                <a class="work-with-us" href="html/error.html">
-                    <p>WORK WITH US</p>
-                    <i class="fa-solid fa-caret-down caret-down-icon"></i>
-                </a>
-                <a class="news" href="html/error.html">
-                    <p>NEWS</p>
-                </a>
+                <div class="dropdown-container">
+                    <a class="who-we-are">
+                        <p>WHO WE ARE</p>
+                        <i class="fa-solid fa-caret-down caret-down-icon"></i>
+                    </a>
+                    <div class="dropdown drop1">
+                        <a class="dropdown-element" href="https://www.riotgames.com/en/who-we-are">About Riot</a>
+                        <a class="dropdown-element" href="https://www.riotgames.com/en/diversity-and-inclusion">Diversity & Inclusion</a>
+                        <a class="dropdown-element" href="https://www.riotgames.com/en/who-we-are/social-impact">Social Impact</a>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <a class="work-with-us">
+                        <p>WORK WITH US</p>
+                        <i class="fa-solid fa-caret-down caret-down-icon"></i>
+                    </a>
+                    <div class="dropdown drop2">
+                        <a class="dropdown-element" href="https://www.riotgames.com/en/work-with-us">Jobs</a>
+                        <a class="dropdown-element" href="https://www.riotgames.com/en/work-with-us/offices">Offices</a>
+                        <a class="dropdown-element" href="https://www.riotgames.com/en/work-with-us/life-at-riot">Life At Riot</a>
+                    </div>
+                </div>
+                <div class="dropdown-container">
+                    <a class="news" href="https://www.riotgames.com/en/news">
+                        <p>NEWS</p>
+                    </a>
+                </div>
             </div>
 
             <form method="" action="">
@@ -238,7 +254,7 @@
                 </label>
             </form>
             
-            <a target="_blank" href="html/error.html">
+            <a href="https://auth.riotgames.com/login#client_id=prod-xsso-riotgames&code_challenge=CZ1MxCCR78GQor2ILRwN3RGnR0MN9minHOYGQsiv_QY&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fxsso.riotgames.com%2Fredirect&response_type=code&scope=openid%20account&state=d015c438d8e034519ca75b86ad">
                 <button class="sign-in">SIGN IN</button>  
             </a>
         </div>
@@ -469,7 +485,7 @@
             <div class="flex-events-container">
 
                 <!-- events-hero-link -->
-                <a class="events-hero-link" href="/html/error.html">
+                <a class="events-hero-link">
                     <div class="events-hero card">
                         <div class="fist-container bg-black">
                             <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
@@ -483,7 +499,7 @@
 
                 <!-- flex-events-article -->
                 <div class="flex-events-article">
-                    <a href="/html/error.html">
+                    <a class="article-link">
                         <div class="article card">
                             <div class="fist-container bg-black">
                                 <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
@@ -498,7 +514,7 @@
                         </div>  
                     </a>
  
-                    <a href="/html/error.html">
+                    <a class="article-link">
                         <div class="article card">
                             <div class="fist-container bg-black">
                                 <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
@@ -513,7 +529,7 @@
                         </div>  
                     </a>
                     
-                    <a href="/html/error.html">
+                    <a class="article-link">
                         <div class="article card">
                             <div class="fist-container bg-black">
                                 <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
@@ -528,7 +544,7 @@
                         </div>  
                     </a>
                     
-                    <a href="/html/error.html">
+                    <a class="article-link">
                         <div class="article card">
                             <div class="fist-container bg-black">
                                 <i class="fa-solid fa-hand-fist fist-hand-icon"></i> 
