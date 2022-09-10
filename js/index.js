@@ -43,9 +43,9 @@ $(document).ready(function(){
 
     $('.preference').click(function(){
         if($(this).find('.toggle-button').css('translate')=='3px'){
-            $(this).find('.toggle-container').css({'borderColor':'green'});
+            $(this).find('.toggle-container').css({'borderColor':'#00e68a'});
             $(this).find('.toggle-button').css({'translate':'22px'});
-            $(this).find('.toggle-bg').css({'backgroundColor':'green'});
+            $(this).find('.toggle-bg').css({'backgroundColor':'#00e68a'});
         }else{
             $(this).find('.toggle-container').css({'borderColor':'var(--myGray)'});
             $(this).find('.toggle-button').css({'translate':'3px'});

@@ -23,4 +23,10 @@
     translate: 3px;
     transition: translate 0.1s linear;
 }
+.fixed-preference .toggle-container{border: solid green 2px;}
+.fixed-preference .toggle-bg{background-color: green;}
+.fixed-preference .toggle-button{
+    background-color: var(--myGray);
+    translate: 22px;
+}
 
