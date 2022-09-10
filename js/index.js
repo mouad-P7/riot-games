@@ -9,21 +9,58 @@ $(document).ready(function(){
         }
     });
 
+
     $('.right-menu-tablet-container').click(function(){
         $('.mobile-nav-bar').css({'right':'0'});
         $('.home-header').css({'opacity':'0.98'});
         $('.home-main > *').css({'opacity':'0.4'});
     });
-    
     $('.close-menu-tablet-container').click(function(){
         $('.mobile-nav-bar').css({'right':'-47rem'});
         $('.home-header').css({'opacity':'1'});
         $('.home-main > *').css({'opacity':'1'});
     });
 
+
     $('.dropdown-container').hover(function(){
         $(this).find('.dropdown').css({'opacity':'1', 'pointer-events':'auto'});
     }, function(){
         $(this).find('.dropdown').css({'opacity':'0', 'pointer-events':'none'});
+    });
+
+
+    $('.cookie').click(function(){
+        $('.cookie-nav-bar').css({'right':'0'});
+        $('.home-header').css({'opacity':'0.98'});
+        $('.home-main > *').css({'opacity':'0.4'});
+    });
+    $('.xmark-container, .cookie-save-button').click(function(){
+        $('.cookie-nav-bar').css({'right':'-47rem'});
+        $('.home-header').css({'opacity':'1'});
+        $('.home-main > *').css({'opacity':'1'});
+    });
+
+
+    $('.preference').click(function(){
+        if($(this).find('.toggle-button').css('translate')=='3px'){
+            $(this).find('.toggle-container').css({'borderColor':'green'});
+            $(this).find('.toggle-button').css({'translate':'22px'});
+            $(this).find('.toggle-bg').css({'backgroundColor':'green'});
+        }else{
+            $(this).find('.toggle-container').css({'borderColor':'var(--myGray)'});
+            $(this).find('.toggle-button').css({'translate':'3px'});
+            $(this).find('.toggle-bg').css({'backgroundColor':'var(--myGray)'});
+        }
+    });
+
+
+    $('.view-cookies').click(function(){
+        if($(this).parent().find('.cookie-info').css('display')=='none'){
+            $(this).parent().find('.cookie-info').css({'display':'flex'});
+            $(this).parent().parent().find('.cookie-break').css({'display':'none'});
+        }else{
+            $(this).parent().find('.cookie-info').css({'display':'none'});
+            $(this).parent().parent().find('.cookie-break').css({'display':'block'});
+        }
     });
 });

@@ -1,0 +1,26 @@
+.toggle-container{
+     border: solid var(--myGray) 2px;
+     width: 5rem;
+     height: 3rem;
+     border-radius: 2rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.toggle-bg{
+    height: 90%;
+    width: 95%;
+    background-color: var(--myGray);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+}
+.toggle-button{
+    border-radius: 50%;
+    height: 75%;
+    width: 40%;
+    background-color: var(--myWhite);
+    translate: 3px;
+    transition: translate 0.1s linear;
+}
+
