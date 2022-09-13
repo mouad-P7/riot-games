@@ -379,7 +379,7 @@ i#left-menu-fist-icon{
     overflow-x: auto;
     width: 100%;
     z-index: 20;
-    transition: top 0.2s ease-out 0.1s;
+    transition: top 0.1s ease;
 }
 .flex-laptop-menu *{color: var(--myBlack);}
 .menu-header{
