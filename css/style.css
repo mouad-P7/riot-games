@@ -70,7 +70,6 @@ i{color: var(--myWhite);}/* ??? */
     z-index: 10;
     overflow: visible;
 }
-.scroll-down{background-color: var(--myBlack);}
 .home-header, .home-header > *, .home-header > * > *, .nav-bar button{
     display: flex;
     justify-content: space-between;
@@ -344,7 +343,7 @@ i#left-menu-fist-icon{
     width: 100%;
     row-gap: 0.6rem;
 }
-.nav-bar-links .dropdown > a{
+.nav-bar-links .dropdown a{
     font-size: 1.3rem;
     padding: 1.2rem 1rem;
 }
@@ -361,12 +360,134 @@ i#left-menu-fist-icon{
 /*////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////*/
-/*///////////////  flex-menu  ////////////////////////////////////////////////*/
+/*///////////////  flex-laptop-menu  ////////////////////////////////////////////////*/
 
 
 
 
-.flex-menu{display: none;}
+.flex-laptop-menu, .menu-header, .flex-laptop-menu .left-menu-container, .flex-laptop-menu .close-laptop-menu-container, .flex-laptop-menu .flex-menu-content, .flex-laptop-menu .dropdown-container, .flex-laptop-menu .card-render-container, .flex-laptop-menu .card-render, .flex-laptop-menu .card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-laptop-menu{
+    background-color: var(--myWhite);
+    position: absolute;
+    top: -100rem;
+    display: block;
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: 100%;
+    z-index: 20;
+    transition: top 0.2s ease-out 0.1s;
+}
+.flex-laptop-menu *{color: var(--myBlack);}
+.menu-header{
+    width: 100%;
+    height: var(--headerHeight);
+}
+.flex-laptop-menu .left-menu-container{
+    width: 9rem;
+    padding-left: 1rem;
+}
+.flex-laptop-menu #riot-games > p{
+    line-height: 1.4rem;
+    font-weight: var(--bold);
+    text-align: start;
+    font-size: var(--headerFontSize);
+}
+.flex-laptop-menu .caret-down-icon{rotate: 180deg;}
+.flex-laptop-menu .close-laptop-menu-container{
+    justify-content: center;
+    aspect-ratio: 1;
+    height: 3.2rem;
+    background-color: var(--myLightGray);
+    border-radius: 1rem;
+    margin-right: 2rem;
+}
+.flex-laptop-menu .close-laptop-menu-container{cursor: pointer;}
+.flex-laptop-menu .xmark-icon{font-size: 1.5rem;}
+.flex-laptop-menu .flex-menu-content{
+    padding: 0 2rem 0 2rem;
+    align-items: flex-start;
+    column-gap: 2rem;
+}
+.flex-laptop-menu .menu-links{
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 2rem 1rem;
+}
+.flex-laptop-menu .dropdown-container{
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.5rem;
+    flex-basis: 31.86%;
+    position: relative;
+}
+.business-container{top: -7rem;}
+.flex-laptop-menu .dropdown-container *{
+    font-size: 1.3rem;
+    text-align: start;
+}
+.flex-laptop-menu .dropdown-container > a{
+    font-weight: var(--bold);
+    padding: 7px 1rem;
+    background-color: var(--myLightGray);
+    width: 100%;
+    border-radius: 1rem;
+    letter-spacing: 1px;
+}
+.flex-laptop-menu .dropdown a{
+    font-weight: var(--medium);
+    margin: 0.7rem 0;
+}
+.flex-laptop-menu .dropdown a:hover{background-color: var(--myLightGray);}
+.flex-laptop-menu .card-render-container{
+    flex-basis: 50%;
+    aspect-ratio: 1 / 0.45;
+    align-items: stretch;
+}
+.flex-laptop-menu .card-render-container *{transition: opacity 0.4s;}
+.flex-laptop-menu .card-render{
+    column-gap: 2rem;
+    align-items: stretch;
+}
+.flex-laptop-menu .card{
+    width: 100%;
+    padding: 0;
+}
+.flex-laptop-menu .card:hover{border: none;}
+.flex-laptop-menu .card-container{
+    flex-basis: 50%;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+.flex-laptop-menu .card-container:hover{cursor: pointer;}
+.card1, .card2{flex-basis: 70%;}
+.card1:hover, .card2:hover{box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.3);}
+.flex-laptop-menu .card-container p{
+    flex-basis: 25%;
+    font-size: 1.2rem;
+    text-align: start;
+    letter-spacing: 1px;
+}
+.card1-photo{background-image: url('../images/card1-photo.jpeg');}
+.card2-photo{background-image: url('../images/card2-photo.jpeg');}
+.no-photo{background-image: url('../images/no-img.jpg');}
+
+
+
+
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
+/*///////////////  flex-mobile-menu  /////////////////////////////////////*/
+.flex-mobile-menu{display: none;}
 
 
 

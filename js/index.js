@@ -1,11 +1,11 @@
 //jquery code
 $(document).ready(function(){
-    $(window).bind('scroll', function(){
+    $(window).on('scroll', function(){
         let gap = 100;
         if($(window).scrollTop() > gap){
-            $('.home-header').addClass('scroll-down');
+            $('.home-header').css({'backgroundColor':'var(--myBlack)'});
         }else{
-            $('.home-header').removeClass('scroll-down');
+            $('.home-header').css({'backgroundColor':'transparent'});
         }
     });
 
@@ -31,7 +31,7 @@ $(document).ready(function(){
     });
 
 
-    $('.dropdown-container').hover(function(){
+    $('.home-header .dropdown-container').hover(function(){
         $(this).find('.dropdown').css({'opacity':'1', 'pointer-events':'auto'});
     }, function(){
         $(this).find('.dropdown').css({'opacity':'0', 'pointer-events':'none'});
@@ -74,8 +74,60 @@ $(document).ready(function(){
     });
 
 
-    $('.left-menu-container').click(function(){
-        alert('This button is currently not working !');});
     $('.events-hero-link, .article-link').click(function(){
-        alert('This event is over !');});
+        alert('This event is over !');
+    });
+
+
+    $('.left-menu-container').click(function(){
+        const scrollGap = $(window).scrollTop();
+        $('.flex-laptop-menu').css({'top':scrollGap});
+        $('.home-header').css({'opacity':'0.98'});
+        $('.home-main > *').css({'opacity':'0.4'});
+    });
+    $('.close-laptop-menu-container, .flex-laptop-menu .left-menu-container, .home-main, .home-footer').click(function(){
+        $('.flex-laptop-menu').css({'top':'-100rem'});
+        $('.home-header').css({'opacity':'1'});
+        $('.home-main > *').css({'opacity':'1'});
+    });
+
+
+    function gameToRender(elementText){
+        let class1 = '';
+        switch(elementText){
+            case 'LEAGUE 0F LEGENDS': 
+                class1 = 'league-of-legends';
+                break;
+            case 'VALORANT': 
+                class1 = 'valorant';
+                break;
+            case 'TEAMFIGHT TACTICS':
+                class1 = 'teamfight-tactics';
+                break;
+            case 'RUINED KING':
+                class1 = 'ruined-king';
+                break;
+            case 'HEXTECH MAYHEM':
+                class1 = 'hextech-mayhem';
+                break;
+            case 'CONV/RGENCE':
+                class1 = 'convirgence';
+                break;
+            case 'SONG OF NUNU':
+                class1 = 'song-of-nunu';
+                break;
+            default:
+                class1 = 'no-photo';
+                break;
+        }
+        return class1;
+    }
+    $('.flex-laptop-menu .dropdown-element').hover(function(){
+        $('.flex-laptop-menu .card-render-container *').css({'opacity':'0'});
+        $('.flex-laptop-menu .card-render-container').addClass(gameToRender($(this).text()));
+    },
+    function(){
+        $('.flex-laptop-menu .card-render-container *').css({'opacity':'1'});
+        $('.flex-laptop-menu .card-render-container').removeClass(gameToRender($(this).text()));
+    });
 });

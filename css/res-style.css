@@ -24,6 +24,8 @@
         flex: unset;
         display: none;
     }
+    .esports-container{top: -2rem;}
+    .business-container{top: -9rem;}
 }
 
 
