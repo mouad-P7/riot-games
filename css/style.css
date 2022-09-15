@@ -265,10 +265,12 @@ i#left-menu-fist-icon{
 
 
 
-.mobile-nav-bar, .cookie-nav-bar{
+.mobile-nav-bar, .cookie-nav-bar, .flex-mobile-menu{
     position: fixed;
     z-index: 20;
     height: 100vh;
+}
+.mobile-nav-bar, .cookie-nav-bar{
     right: -47rem;
     transition: right 0.2s ease-in 0.1s;
 }
@@ -276,7 +278,7 @@ i#left-menu-fist-icon{
     background-color: var(--myDarkGray);
     width: 45rem;
 }
-.flex-mobile-nav-bar{
+.flex-mobile-nav-bar, .flex-mobile-menu{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -360,12 +362,12 @@ i#left-menu-fist-icon{
 /*////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////*/
-/*///////////////  flex-laptop-menu  ////////////////////////////////////////////////*/
+/*///////////////  flex-laptop-menu  /////////////////////////////////////*/
 
 
 
 
-.flex-laptop-menu, .menu-header, .flex-laptop-menu .left-menu-container, .flex-laptop-menu .close-laptop-menu-container, .flex-laptop-menu .flex-menu-content, .flex-laptop-menu .dropdown-container, .flex-laptop-menu .card-render-container, .flex-laptop-menu .card-render, .flex-laptop-menu .card-container{
+.menu-header, .menu-header .left-menu-container, .menu-header .close-laptop-menu-container, .flex-menu-content, .flex-laptop-menu .dropdown-container,  .card-render-container, .card-render, .card-render .card-container, .flex-mobile-menu .menu-links, .menu-links .dropdown-container > a{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -381,23 +383,24 @@ i#left-menu-fist-icon{
     z-index: 20;
     transition: top 0.1s ease;
 }
-.flex-laptop-menu *{color: var(--myBlack);}
+.flex-laptop-menu *, .flex-mobile-menu *{color: var(--myBlack);}
 .menu-header{
     width: 100%;
     height: var(--headerHeight);
+    flex-shrink: 0;
 }
-.flex-laptop-menu .left-menu-container{
+.flex-laptop-menu .left-menu-container, .flex-mobile-menu .left-menu-container{
     width: 9rem;
     padding-left: 1rem;
 }
-.flex-laptop-menu #riot-games > p{
+.flex-laptop-menu #riot-games > p, .flex-mobile-menu #riot-games > p{
     line-height: 1.4rem;
     font-weight: var(--bold);
     text-align: start;
     font-size: var(--headerFontSize);
 }
-.flex-laptop-menu .caret-down-icon{rotate: 180deg;}
-.flex-laptop-menu .close-laptop-menu-container{
+.menu-header .caret-down-icon{rotate: 180deg;}
+.flex-laptop-menu .close-laptop-menu-container, .flex-mobile-menu .close-laptop-menu-container{
     justify-content: center;
     aspect-ratio: 1;
     height: 3.2rem;
@@ -405,9 +408,9 @@ i#left-menu-fist-icon{
     border-radius: 1rem;
     margin-right: 2rem;
 }
-.flex-laptop-menu .close-laptop-menu-container{cursor: pointer;}
-.flex-laptop-menu .xmark-icon{font-size: 1.5rem;}
-.flex-laptop-menu .flex-menu-content{
+.flex-laptop-menu .close-laptop-menu-container, .flex-mobile-menu .close-laptop-menu-container{cursor: pointer;}
+.menu-header .xmark-icon{font-size: 1.5rem;}
+.flex-menu-content{
     padding: 0 2rem 0 2rem;
     align-items: flex-start;
     column-gap: 2rem;
@@ -420,7 +423,7 @@ i#left-menu-fist-icon{
     justify-content: flex-end;
     gap: 2rem 1rem;
 }
-.flex-laptop-menu .dropdown-container{
+.menu-links .dropdown-container{
     flex-direction: column;
     align-items: flex-start;
     row-gap: 0.5rem;
@@ -428,11 +431,11 @@ i#left-menu-fist-icon{
     position: relative;
 }
 .business-container{top: -7rem;}
-.flex-laptop-menu .dropdown-container *{
+.menu-links .dropdown-container *{
     font-size: 1.3rem;
     text-align: start;
 }
-.flex-laptop-menu .dropdown-container > a{
+.menu-links .dropdown-container > a{
     font-weight: var(--bold);
     padding: 7px 1rem;
     background-color: var(--myLightGray);
@@ -440,35 +443,35 @@ i#left-menu-fist-icon{
     border-radius: 1rem;
     letter-spacing: 1px;
 }
-.flex-laptop-menu .dropdown a{
+.menu-links .dropdown a{
     font-weight: var(--medium);
     margin: 0.7rem 0;
 }
-.flex-laptop-menu .dropdown a:hover{background-color: var(--myLightGray);}
+.menu-links .dropdown a:hover{background-color: var(--myLightGray);}
 .flex-laptop-menu .card-render-container{
     flex-basis: 50%;
     aspect-ratio: 1 / 0.45;
     align-items: stretch;
 }
 .flex-laptop-menu .card-render-container *{transition: opacity 0.4s;}
-.flex-laptop-menu .card-render{
+.card-render{
     column-gap: 2rem;
     align-items: stretch;
 }
-.flex-laptop-menu .card{
+.flex-laptop-menu .card , .flex-mobile-menu .card{
     width: 100%;
     padding: 0;
 }
-.flex-laptop-menu .card:hover{border: none;}
-.flex-laptop-menu .card-container{
+.card-render .card:hover{border: none;}
+.card-render .card-container{
     flex-basis: 50%;
     flex-direction: column;
     row-gap: 1.5rem;
 }
-.flex-laptop-menu .card-container:hover{cursor: pointer;}
-.card1, .card2{flex-basis: 70%;}
+.card-render .card-container:hover, .flex-mobile-menu a{cursor: pointer;}
+.flex-laptop-menu.card1, .flex-laptop-menu .card2{flex-basis: 70%;}
 .card1:hover, .card2:hover{box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.3);}
-.flex-laptop-menu .card-container p{
+.card-render .card-container p{
     flex-basis: 25%;
     font-size: 1.2rem;
     text-align: start;
@@ -481,13 +484,71 @@ i#left-menu-fist-icon{
 
 
 
-
 /*////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////*/
 /*////////////////////////////////////////////////////////////////////////*/
 /*///////////////  flex-mobile-menu  /////////////////////////////////////*/
-.flex-mobile-menu{display: none;}
+
+
+
+
+.flex-mobile-menu{
+    left: -47rem;
+    transition: left 0.2s ease-in 0.1s;
+    background-color: var(--myWhite);
+    width: 45rem;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.flex-mobile-menu .flex-menu-content{
+    flex-direction: column;
+    align-items: center;
+}
+.flex-mobile-menu .menu-links{
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+}
+.flex-mobile-menu .dropdown-container{
+    flex-basis: unset;
+    width: 100%;
+}
+.flex-mobile-menu .business-container, .flex-mobile-menu .esports-container{top: unset;}
+.flex-mobile-menu .menu-links *{font-size: 1.6rem;}
+.flex-mobile-menu .caret-down-icon{
+    color: var(--myGray);
+    transition: rotate 0.2s;
+}
+.flex-mobile-menu .dropdown-container > a {padding: 1.2rem 1.5rem;}
+.flex-mobile-menu .dropdown{display: none;}
+.flex-mobile-menu .dropdown a{
+    margin: 2.2rem 0;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+.drop1 .card{
+    height: 18rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.drop1 .game-logo{
+    width: 26%;
+    margin-left: 2rem;
+}
+.flex-mobile-menu .card-render-container{
+    padding: 4rem 0;
+    flex-basis: unset;
+    aspect-ratio: unset;
+    align-items: stretch;
+}
+.flex-mobile-menu .card-render{
+    row-gap: 2rem;
+    flex-direction: column;
+}
+.flex-mobile-menu .card1, .flex-mobile-menu .card2{height: 28rem;}
 
 
 

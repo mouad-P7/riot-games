@@ -80,13 +80,24 @@ $(document).ready(function(){
 
 
     $('.left-menu-container').click(function(){
-        const scrollGap = $(window).scrollTop();
-        $('.flex-laptop-menu').css({'top':scrollGap});
-        $('.home-header').css({'opacity':'0.98'});
-        $('.home-main > *').css({'opacity':'0.4'});
+        if($(window).outerWidth() <= 1000){
+            $('.flex-mobile-menu').css({'left':'0'});
+            $('.home-header').css({'opacity':'0.98'});
+            $('.home-main > *').css({'opacity':'0.4'});
+        }else{
+            const scrollGap = $(window).scrollTop();
+            $('.flex-laptop-menu').css({'top':scrollGap});
+            $('.home-header').css({'opacity':'0.98'});
+            $('.home-main > *').css({'opacity':'0.4'});
+        }
     });
-    $('.close-laptop-menu-container, .flex-laptop-menu .left-menu-container, .home-main, .home-footer').click(function(){
+    $('.flex-laptop-menu .close-laptop-menu-container, .flex-laptop-menu .left-menu-container, .home-main, .home-footer').click(function(){
         $('.flex-laptop-menu').css({'top':'-100rem'});
+        $('.home-header').css({'opacity':'1'});
+        $('.home-main > *').css({'opacity':'1'});
+    });
+    $('.flex-mobile-menu .close-laptop-menu-container, .flex-mobile-menu .left-menu-container, .home-main, .home-footer').click(function(){
+        $('.flex-mobile-menu').css({'left':'-47rem'});
         $('.home-header').css({'opacity':'1'});
         $('.home-main > *').css({'opacity':'1'});
     });
@@ -129,5 +140,22 @@ $(document).ready(function(){
     function(){
         $('.flex-laptop-menu .card-render-container *').css({'opacity':'1'});
         $('.flex-laptop-menu .card-render-container').removeClass(gameToRender($(this).text()));
+    });
+
+
+    $('.flex-mobile-menu .dropdown-container').click(function(){
+        if($(this).find('.dropdown').css('display')=='none'){
+            $(this).find('.dropdown').css({'display':'block'});
+            $(this).find('.dropdown-element').css({'opacity':'1'});
+            $(this).children('a').css({'backgroundColor':'var(--myBlack)'});
+            $(this).find('p').css({'color':'var(--myWhite)'});
+            $(this).find('.caret-down-icon').css({'rotate':'180deg'});
+        }else{
+            $(this).find('.dropdown').css({'display':'none'});
+            $(this).find('.dropdown-element').css({'opacity':'0'});
+            $(this).children('a').css({'backgroundColor':'var(--myLightGray)'});
+            $(this).find('p').css({'color':'var(--myBlack)'});
+            $(this).find('.caret-down-icon').css({'rotate':'unset'});
+        }
     });
 });
