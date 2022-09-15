@@ -181,6 +181,7 @@ i#left-menu-fist-icon{
     border: none;
     background-color: transparent;
 }
+.right-menu-laptop-container{column-gap: 1rem;}
 .right-menu-tablet-container{background-color: var(--myLightGray);}
 .network-icon-container:hover, .right-menu-tablet-container:hover{
     background-color: var(--myGray);
@@ -235,7 +236,10 @@ i#left-menu-fist-icon{
     padding: 5px 2rem;
     border-radius: 20px;
 }
-.home-header form{border: solid var(--myWhite) 0.1px;}
+.home-header form{
+    border: solid var(--myWhite) 0.1px;
+    padding: 5px 1rem;
+}
 .sign-in{
     border: thin black;
     background-color: var(--myRed);
@@ -382,6 +386,7 @@ i#left-menu-fist-icon{
     width: 100%;
     z-index: 20;
     transition: top 0.1s ease;
+    max-height: 90rem;
 }
 .flex-laptop-menu *, .flex-mobile-menu *{color: var(--myBlack);}
 .menu-header{
@@ -469,7 +474,7 @@ i#left-menu-fist-icon{
     row-gap: 1.5rem;
 }
 .card-render .card-container:hover, .flex-mobile-menu a{cursor: pointer;}
-.flex-laptop-menu.card1, .flex-laptop-menu .card2{flex-basis: 70%;}
+.flex-laptop-menu .card1, .flex-laptop-menu .card2{flex-basis: 70%;}
 .card1:hover, .card2:hover{box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.3);}
 .card-render .card-container p{
     flex-basis: 25%;
