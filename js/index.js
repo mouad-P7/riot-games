@@ -2,7 +2,8 @@
 $(document).ready(function(){
     $(window).on('scroll', function(){
         let gap = 100;
-        if($(window).scrollTop() > gap){
+        scrollHeight = $(window).scrollTop();
+        if(scrollHeight > gap){
             $('.home-header').css({'backgroundColor':'var(--myBlack)'});
         }else{
             $('.home-header').css({'backgroundColor':'transparent'});
@@ -158,4 +159,21 @@ $(document).ready(function(){
             $(this).find('.caret-down-icon').css({'rotate':'unset'});
         }
     });
+
+    
 });
+
+
+//javascript code
+const bgImg = document.querySelectorAll('.events-hero, .article-photo, .flex-games .card, .flex-games .game-logo, .monster-photo');
+    const bgImgObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.toggle('lazy');
+                bgImgObserver.unobserve(entry.target);
+            }
+        });
+    }, {rootMargin:'140px'});
+bgImg.forEach(x => {bgImgObserver.observe(x)});
+
+

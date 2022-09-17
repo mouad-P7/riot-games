@@ -49,6 +49,27 @@ i{color: var(--myWhite);}/* ??? */
     z-index: 5;
 } 
 .fist-hand-icon{font-size: var(--fistSize);}
+.card{
+    background-color: transparent;
+    border: none;
+    border-radius: 1rem;
+    padding: 2.2rem;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.card:hover{
+    border: solid var(--myWhite) 0.5px;
+}
+.card, .card *{
+    position: relative;
+    text-align: start;
+    z-index: 1;
+}
+.home-main .lazy{
+    background-image: unset;
+    opacity: 0;
+}
 
 
 
@@ -669,23 +690,6 @@ i#left-menu-fist-icon{
 
 
 .home-main{background-color: var(--myDarkGray);}
-.card{
-    background-color: transparent;
-    border: none;
-    border-radius: 1rem;
-    padding: 2.2rem;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-}
-.card:hover{
-    border: solid var(--myWhite) 0.5px;
-}
-.card, .card *{
-    position: relative;
-    text-align: start;
-    z-index: 1;
-}
 #article-img-1{background-image: url("/images/riot-games-data-purge-deleting-old-accounts.png");}
 #article-img-2{background-image: url("/images/riotgames-sola-technology-center-grand-opening-1.png");}
 #article-img-3{background-image: url("/images/00-d-i-report-original-english.png");}
