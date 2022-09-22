@@ -137,8 +137,7 @@ $(document).ready(function(){
     $('.flex-laptop-menu .dropdown-element').hover(function(){
         $('.flex-laptop-menu .card-render-container *').css({'opacity':'0'});
         $('.flex-laptop-menu .card-render-container').addClass(gameToRender($(this).text()));
-    },
-    function(){
+    }, function(){
         $('.flex-laptop-menu .card-render-container *').css({'opacity':'1'});
         $('.flex-laptop-menu .card-render-container').removeClass(gameToRender($(this).text()));
     });
@@ -173,7 +172,7 @@ const bgImg = document.querySelectorAll('.events-hero, .article-photo, .flex-gam
                 bgImgObserver.unobserve(entry.target);
             }
         });
-    }, {rootMargin:'140px'});
+    }, {rootMargin:'100px'});
 bgImg.forEach(x => {bgImgObserver.observe(x)});
 
 

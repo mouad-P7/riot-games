@@ -503,8 +503,8 @@ i#left-menu-fist-icon{
     text-align: start;
     letter-spacing: 1px;
 }
-.card1-photo{background-image: url('../images/card1-photo.jpeg');}
-.card2-photo{background-image: url('../images/card2-photo.jpeg');}
+.card1-photo{background-image: url('../images/card1-photo.jpg');}
+.card2-photo{background-image: url('../images/card2-photo.jpg');}
 .no-photo{background-image: url('../images/no-img.jpg');}
 
 
@@ -690,10 +690,10 @@ i#left-menu-fist-icon{
 
 
 .home-main{background-color: var(--myDarkGray);}
-#article-img-1{background-image: url("/images/riot-games-data-purge-deleting-old-accounts.png");}
-#article-img-2{background-image: url("/images/riotgames-sola-technology-center-grand-opening-1.png");}
-#article-img-3{background-image: url("/images/00-d-i-report-original-english.png");}
-#article-img-4{background-image: url("/images/rg-rainbowrioters-maria-pentinen.png");}
+#article-img-1{background-image: url("/images/article-img-1.png");}
+#article-img-2{background-image: url("/images/article-img-2.png");}
+#article-img-3{background-image: url("/images/article-img-3.png");}
+#article-img-4{background-image: url("/images/article-img-4.png");}
 #what-happening-section, #our-games-section{
     padding-top: 5rem;
     padding-bottom: 10rem;
@@ -706,24 +706,24 @@ i#left-menu-fist-icon{
     align-items: center;
     height: 18rem;
 }
-.league-of-legends{background-image: url("/images/lol-card-bg-1800.jpg");}
-.league-of-legends-logo{background-image: url("/images/lol-logotype.png");}
-.valorant{background-image: url("/images/val-card-bg-1800-08-22.png");}
-.valorent-logo{background-image: url("/images/valorant-logotype.png");}
-.teamfight-tactics{background-image: url("/images/tft-card-bg-1800.jpg");}
-.teamfight-tactics-logo{background-image: url("/images/tft-logotype-2021.png");}
-.league-of-legends-wr{background-image: url("/images/lol-wildrift-productimage.png");}
-.league-of-legends-wr-logo{background-image: url("/images/lol-wildrift-logotype.png");}
-.legends-of-runeterra{background-image: url("/images/legends-of-runeterra-productimage.png");}
-.legends-of-runeterra-logo{background-image: url("/images/legends-of-runeterra-logotype.png");}
-.ruined-king{background-image: url("/images/ruined-king-productimage.png");}
-.ruined-king-logo{background-image: url("/images/ruined-king-logotype.png");}
-.hextech-mayhem{background-image: url("/images/hextetch-mayhem-card-bg-1800.jpg");}
-.hextech-mayhem-logo{background-image: url("/images/hextech-mayhem-logotype.png");}
-.convirgence{background-image: url("/images/convrgence-productimage.png");}
-.convirgence-logo{background-image: url("/images/convrgence-logotype.png");}
-.song-of-nunu{background-image: url("/images/song-of-nunu-card-bg-1800.jpg");}
-.song-of-nunu-logo{background-image: url("/images/songofnunu-logotype.png");}
+.league-of-legends{background-image: url("/images/league-of-legends.jpg");}
+.league-of-legends-logo{background-image: url("/images/league-of-legends-logo.png");}
+.valorant{background-image: url("/images/valorant.png");}
+.valorent-logo{background-image: url("/images/valorant-logo.png");}
+.teamfight-tactics{background-image: url("/images/teamfight-tactics.jpg");}
+.teamfight-tactics-logo{background-image: url("/images/teamfight-tactics-logo.png");}
+.league-of-legends-wr{background-image: url("/images/league-of-legends-wr.png");}
+.league-of-legends-wr-logo{background-image: url("/images/league-of-legends-wr-logo.png");}
+.legends-of-runeterra{background-image: url("/images/legends-of-runeterra.png");}
+.legends-of-runeterra-logo{background-image: url("/images/legends-of-runeterra-logo.png");}
+.ruined-king{background-image: url("/images/ruined-king.png");}
+.ruined-king-logo{background-image: url("/images/ruined-king-logo.png");}
+.hextech-mayhem{background-image: url("/images/hextech-mayhem.jpg");}
+.hextech-mayhem-logo{background-image: url("/images/hextech-mayhem-logo.png");}
+.convirgence{background-image: url("/images/convirgence.png");}
+.convirgence-logo{background-image: url("/images/convirgence-logo.png");}
+.song-of-nunu{background-image: url("/images/song-of-nunu.jpg");}
+.song-of-nunu-logo{background-image: url("/images/song-of-nunu-logo.png");}
 
 
 
@@ -836,7 +836,7 @@ i#left-menu-fist-icon{
 .events-hero-link:hover{cursor: pointer;}
 .events-hero{
     height: 26vw;
-    background-image: url("/images/hasan-colakoglu.png");
+    background-image: url("/images/hero.png");
     position: relative;
 }
 .hero-details{
