@@ -65,7 +65,7 @@ i{color: var(--myWhite);}/* ??? */
     text-align: start;
     z-index: 1;
 }
-.home-main .lazy{
+.home-main .lazy, .flex-mobile-menu .lazy{
     background-image: unset;
     opacity: 0;
 }
@@ -573,7 +573,7 @@ i#left-menu-fist-icon{
     row-gap: 2rem;
     flex-direction: column;
 }
-.flex-mobile-menu .card1, .flex-mobile-menu .card2{height: 28rem;}
+.flex-mobile-menu .card1, .flex-mobile-menu .card2{height: 27rem;}
 
 
 
@@ -689,10 +689,10 @@ i#left-menu-fist-icon{
 
 
 .home-main{background-color: var(--myDarkGray);}
-#article-img-1{background-image: url("/images/article-img-1.png");}
-#article-img-2{background-image: url("/images/article-img-2.png");}
-#article-img-3{background-image: url("/images/article-img-3.png");}
-#article-img-4{background-image: url("/images/article-img-4.png");}
+.article-img-1{background-image: url("/images/article-img-1.png");}
+.article-img-2{background-image: url("/images/article-img-2.png");}
+.article-img-3{background-image: url("/images/article-img-3.png");}
+.article-img-4{background-image: url("/images/article-img-4.png");}
 #what-happening-section, #our-games-section{
     padding-top: 5rem;
     padding-bottom: 10rem;
@@ -887,6 +887,7 @@ i#left-menu-fist-icon{
 .article-photo{
     background-color: gray;
     flex: 1 1 40%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0 1rem 1rem 0;

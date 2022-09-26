@@ -75,11 +75,6 @@ $(document).ready(function(){
     });
 
 
-    $('.events-hero-link, .article-link').click(function(){
-        alert('This event is over !');
-    });
-
-
     $('.left-menu-container').click(function(){
         if($(window).outerWidth() <= 1000){
             $('.flex-mobile-menu').css({'left':'0'});
@@ -164,15 +159,15 @@ $(document).ready(function(){
 
 
 //javascript code
-const bgImg = document.querySelectorAll('.events-hero, .article-photo, .flex-games .card, .flex-games .game-logo, .monster-photo');
-    const bgImgObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                entry.target.classList.toggle('lazy');
-                bgImgObserver.unobserve(entry.target);
-            }
-        });
-    }, {rootMargin:'100px'});
+const bgImg = document.querySelectorAll('.events-hero, .article-photo, .flex-games .card, .flex-games .game-logo, .monster-photo, .flex-mobile-menu .card1, .flex-mobile-menu .card2');
+const bgImgObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.toggle('lazy');
+            bgImgObserver.unobserve(entry.target);
+        }
+    });
+}, {rootMargin:'100px 0px'});
 bgImg.forEach(x => {bgImgObserver.observe(x)});
 
 
