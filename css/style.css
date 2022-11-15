@@ -252,13 +252,27 @@ i#left-menu-fist-icon{
     font-size: 2.2rem;
 }
 .bars-icon{padding-top: 0.2rem;}
-.home-header form, .sign-in{
+.home-header form, .mobile-nav-bar form, .sign-in{
     padding: 5px 2rem;
     border-radius: 20px;
 }
-.home-header form{
+.home-header form, .mobile-nav-bar form{
     border: solid var(--myWhite) 0.1px;
     padding: 5px 1rem;
+    width: 16.5rem;
+}
+.search-input::placeholder{color: var(--myWhite);}
+.search-input{
+    background-color: transparent;
+    text-align: start;
+    text-transform: uppercase;
+    border-style: none;
+    color: var(--myWhite);
+    outline: 0;
+}
+.search-button{
+    background-color: transparent;
+    border: none;
 }
 .sign-in{
     border: thin black;
