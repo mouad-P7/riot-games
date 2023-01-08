@@ -1,0 +1,20 @@
+{
+  "name": "riot-games",
+  "version": "1.0.0",
+  "description": "I will try to clone \"Riot Games\" website from scratch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mouad-P7/riot-games.git"
+  },
+  "keywords": [],
+  "author": "Mouad Ananouch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mouad-P7/riot-games/issues"
+  },
+  "homepage": "https://github.com/mouad-P7/riot-games#readme"
+}
