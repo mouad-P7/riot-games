@@ -99,6 +99,23 @@ $(document).ready(function(){
     });
 
 
+    $('.flex-mobile-menu .dropdown-container').click(function(){
+        if($(this).find('.dropdown').css('display')=='none'){
+            $(this).find('.dropdown').css({'display':'block'});
+            $(this).find('.dropdown-element').css({'opacity':'1'});
+            $(this).children('a').css({'backgroundColor':'var(--myBlack)'});
+            $(this).find('p').css({'color':'var(--myWhite)'});
+            $(this).find('.caret-down-icon').css({'rotate':'180deg'});
+        }else{
+            $(this).find('.dropdown').css({'display':'none'});
+            $(this).find('.dropdown-element').css({'opacity':'0'});
+            $(this).children('a').css({'backgroundColor':'var(--myLightGray)'});
+            $(this).find('p').css({'color':'var(--myBlack)'});
+            $(this).find('.caret-down-icon').css({'rotate':'unset'});
+        }
+    });
+
+
     function gameToRender(elementText){
         let class1 = '';
         switch(elementText){
@@ -137,29 +154,12 @@ $(document).ready(function(){
         $('.flex-laptop-menu .card-render-container').removeClass(gameToRender($(this).text()));
     });
 
-
-    $('.flex-mobile-menu .dropdown-container').click(function(){
-        if($(this).find('.dropdown').css('display')=='none'){
-            $(this).find('.dropdown').css({'display':'block'});
-            $(this).find('.dropdown-element').css({'opacity':'1'});
-            $(this).children('a').css({'backgroundColor':'var(--myBlack)'});
-            $(this).find('p').css({'color':'var(--myWhite)'});
-            $(this).find('.caret-down-icon').css({'rotate':'180deg'});
-        }else{
-            $(this).find('.dropdown').css({'display':'none'});
-            $(this).find('.dropdown-element').css({'opacity':'0'});
-            $(this).children('a').css({'backgroundColor':'var(--myLightGray)'});
-            $(this).find('p').css({'color':'var(--myBlack)'});
-            $(this).find('.caret-down-icon').css({'rotate':'unset'});
-        }
-    });
-
     
 });
 
 
 //javascript code
-const bgImg = document.querySelectorAll('.events-hero, .article-photo, .flex-games .card, .flex-games .game-logo, .monster-photo, .flex-mobile-menu .card1, .flex-mobile-menu .card2');
+/*const bgImg = document.querySelectorAll('.events-hero, .article-photo, .flex-games .card, .flex-games .game-logo, .monster-photo, .flex-mobile-menu .card1, .flex-mobile-menu .card2');
 const bgImgObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
@@ -167,7 +167,7 @@ const bgImgObserver = new IntersectionObserver(entries => {
             bgImgObserver.unobserve(entry.target);
         }
     });
-}, {rootMargin:'100px 0px'});
-bgImg.forEach(x => {bgImgObserver.observe(x)});
+}, {rootMargin:'200px 0px'});
+bgImg.forEach(x => {bgImgObserver.observe(x)});*/
 
 

@@ -65,10 +65,10 @@ i{color: var(--myWhite);}/* ??? */
     text-align: start;
     z-index: 1;
 }
-.home-main .lazy, .flex-mobile-menu .lazy{
+/* .home-main .lazy, .flex-mobile-menu .lazy{
     background-image: unset;
     opacity: 0;
-}
+} */
 
 
 
@@ -516,9 +516,6 @@ i#left-menu-fist-icon{
     text-align: start;
     letter-spacing: 1px;
 }
-.card1-photo{background-image: url('../images/card1-photo.jpg');}
-.card2-photo{background-image: url('../images/card2-photo.jpg');}
-.no-photo{background-image: url('../images/no-img.jpg');}
 
 
 
@@ -582,6 +579,7 @@ i#left-menu-fist-icon{
     flex-basis: unset;
     aspect-ratio: unset;
     align-items: stretch;
+    position: relative;
 }
 .flex-mobile-menu .card-render{
     row-gap: 2rem;
@@ -703,10 +701,6 @@ i#left-menu-fist-icon{
 
 
 .home-main{background-color: var(--myDarkGray);}
-.article-img-1{background-image: url("/images/article-img-1.png");}
-.article-img-2{background-image: url("/images/article-img-2.png");}
-.article-img-3{background-image: url("/images/article-img-3.png");}
-.article-img-4{background-image: url("/images/article-img-4.png");}
 #what-happening-section, #our-games-section{
     padding-top: 5rem;
     padding-bottom: 10rem;
@@ -719,24 +713,6 @@ i#left-menu-fist-icon{
     align-items: center;
     height: 18rem;
 }
-.league-of-legends{background-image: url("/images/league-of-legends.jpg");}
-.league-of-legends-logo{background-image: url("/images/league-of-legends-logo.png");}
-.valorant{background-image: url("/images/valorant.png");}
-.valorent-logo{background-image: url("/images/valorant-logo.png");}
-.teamfight-tactics{background-image: url("/images/teamfight-tactics.jpg");}
-.teamfight-tactics-logo{background-image: url("/images/teamfight-tactics-logo.png");}
-.league-of-legends-wr{background-image: url("/images/league-of-legends-wr.png");}
-.league-of-legends-wr-logo{background-image: url("/images/league-of-legends-wr-logo.png");}
-.legends-of-runeterra{background-image: url("/images/legends-of-runeterra.png");}
-.legends-of-runeterra-logo{background-image: url("/images/legends-of-runeterra-logo.png");}
-.ruined-king{background-image: url("/images/ruined-king.png");}
-.ruined-king-logo{background-image: url("/images/ruined-king-logo.png");}
-.hextech-mayhem{background-image: url("/images/hextech-mayhem.jpg");}
-.hextech-mayhem-logo{background-image: url("/images/hextech-mayhem-logo.png");}
-.convirgence{background-image: url("/images/convirgence.png");}
-.convirgence-logo{background-image: url("/images/convirgence-logo.png");}
-.song-of-nunu{background-image: url("/images/song-of-nunu.jpg");}
-.song-of-nunu-logo{background-image: url("/images/song-of-nunu-logo.png");}
 
 
 
@@ -748,17 +724,20 @@ i#left-menu-fist-icon{
 
 
 
+.main-photo{
+    position: absolute;
+    left: 0;
+    height: 61rem;
+    object-fit: cover;
+}
 #star-guardian-section{
     height: 61rem;
-    background-image: url("/images/main-photo.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
     display: flex;
     justify-content: start;
     padding: 6rem;
 }
 #star-guardian-section *{
+    z-index: 0;
     color: var(--myWhite);
     font-weight: var(--bold);
 }
@@ -848,12 +827,25 @@ i#left-menu-fist-icon{
     justify-content: center;
 }
 .bg-black{background-color: black;}
-.events-hero-link{flex: 1 1 60%;}
+.events-hero-link{
+    flex: 1 1 60%;
+    height: 26vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
 .events-hero-link:hover{cursor: pointer;}
+.img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 99%;
+    border-radius: 1rem;
+}
 .events-hero{
     height: 26vw;
-    background-image: url("/images/hero.png");
-    position: relative;
 }
 .hero-details{
     position: relative;
@@ -899,11 +891,9 @@ i#left-menu-fist-icon{
     flex: 1 1 60%;
 }
 .article-photo{
-    background-color: gray;
     flex: 1 1 40%;
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    object-fit: cover;
     border-radius: 0 1rem 1rem 0;
 }
 .article-details > p{
@@ -949,6 +939,9 @@ i#left-menu-fist-icon{
 }
 .grid-main-games{grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));}
 .grid-second-games{grid-template-columns: repeat(auto-fit, minmax(35.5rem, 1fr));}
+.main-game, .second-game{
+    position: relative;
+}
 .flex-games .card{
     aspect-ratio: 1 / 0.45;
     display: flex;
@@ -989,7 +982,7 @@ i#left-menu-fist-icon{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 0.5rem;
+    padding: 0.5rem 0.5rem;
 }
 .main-game-content .one-device{width: 2.5rem;}
 .main-game-content .two-devices{width: 5rem;}
@@ -1027,10 +1020,8 @@ i#left-menu-fist-icon{
 }
 .monster-photo{
     width: 50vw;
-    background-image: url("/images/annie.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    object-fit: cover;
+    object-position: center;
 }
 .flex-we-are-hiring{
     width: 50vw;
