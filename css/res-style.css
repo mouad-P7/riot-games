@@ -89,7 +89,10 @@
         justify-content: space-between;
         align-items: center;
     }
-    .article-details{flex: 1 1 60%;}
+    .article-details{
+        flex: 1 1 60%;
+        overflow: hidden;
+    }
     .article-photo{
         display: inherit;
         flex: 1 1 40%;
