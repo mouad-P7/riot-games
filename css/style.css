@@ -53,9 +53,6 @@ i{color: var(--myWhite);}/* ??? */
     border: none;
     border-radius: 1rem;
     padding: 2.2rem;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
 }
 .card:hover{
     border: solid var(--myWhite) 0.5px;
@@ -509,6 +506,7 @@ i#left-menu-fist-icon{
     flex-basis: 50%;
     flex-direction: column;
     row-gap: 1.5rem;
+    position: relative;
 }
 .card-render .card-container:hover, .flex-mobile-menu a{cursor: pointer;}
 .flex-laptop-menu .card1, .flex-laptop-menu .card2{flex-basis: 70%;}
@@ -573,9 +571,13 @@ i#left-menu-fist-icon{
     justify-content: flex-start;
     align-items: center;
 }
-.drop1 .game-logo{
+.drop1 .game-logo, .flex-mobile-menu .game-logo{
     width: 26%;
-    margin-left: 2rem;
+    height: 50%;
+    margin: 15% 2rem;
+}
+.flex-mobile-menu .img{
+    object-fit: fill;
 }
 .flex-mobile-menu .card-render-container{
     padding: 4rem 0;
@@ -844,7 +846,7 @@ i#left-menu-fist-icon{
     left: 0;
     object-fit: cover;
     width: 100%;
-    height: 99%;
+    height: 99.5%;
     border-radius: 1rem;
 }
 .events-hero{
@@ -969,9 +971,6 @@ i#left-menu-fist-icon{
 .game-logo{
     aspect-ratio: 1 / 1.2;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
 }
 .main-game-content > p{
     font-size: 1rem;

@@ -100,7 +100,16 @@ $(document).ready(function(){
 
 
     $('.flex-mobile-menu .dropdown-container').click(function(){
-        if($(this).find('.dropdown').css('display')=='none'){
+        let mobileDropdownContainer = $('.flex-mobile-menu .dropdown-container');
+        let mobileDropdown = $('.flex-mobile-menu .dropdown-container .dropdown');
+        console.log(mobileDropdown);
+        if($(this).children('.dropdown').css('display')=='none'){
+            mobileDropdown.css({'display':'none'});
+            /*mobileDropdown.children('.dropdown-element').css({'opacity':'0'});*/
+            mobileDropdownContainer.children('a').css({'backgroundColor':'var(--myLightGray)'});
+            mobileDropdownContainer.find('p').css({'color':'var(--myBlack)'});
+            mobileDropdownContainer.find('.caret-down-icon').css({'rotate':'unset'});
+            
             $(this).find('.dropdown').css({'display':'block'});
             $(this).find('.dropdown-element').css({'opacity':'1'});
             $(this).children('a').css({'backgroundColor':'var(--myBlack)'});
@@ -153,11 +162,13 @@ $(document).ready(function(){
         return alt1;
     }
     $('.flex-laptop-menu .dropdown-element').hover(function(){
+        let imgAlt = String(gameToRender($(this).text()));
         $('.flex-laptop-menu .card-render *').css({'opacity':'0'});
-        $("img[alt='"+String(gameToRender($(this).text()))+"']").css({'display':'inline','z-index':'2'});
+        $("img[alt='"+imgAlt+"']").css({'display':'inline','z-index':'2'});
+        $(this).data('imgAlt', imgAlt);
     }, function(){
         $('.flex-laptop-menu .card-render *').css({'opacity':'1'});
-        $("img[alt='"+String(gameToRender($(this).text()))+"']").css({'display':'none','z-index':'0'});
+        $("img[alt='"+$(this).data('imgAlt')+"']").css({'display':'none','z-index':'0'});
     });
 
     
