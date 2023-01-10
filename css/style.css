@@ -492,6 +492,9 @@ i#left-menu-fist-icon{
     aspect-ratio: 1 / 0.45;
     align-items: stretch;
 }
+.flex-laptop-menu .card-render-container .img{
+    display: none;
+}
 .flex-laptop-menu .card-render-container *{transition: opacity 0.4s;}
 .card-render{
     column-gap: 2rem;

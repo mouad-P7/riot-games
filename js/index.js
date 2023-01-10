@@ -117,41 +117,47 @@ $(document).ready(function(){
 
 
     function gameToRender(elementText){
-        let class1 = '';
+        let alt1 = '';
         switch(elementText){
             case 'LEAGUE 0F LEGENDS': 
-                class1 = 'league-of-legends';
+                alt1 = 'league-of-legends';
                 break;
             case 'VALORANT': 
-                class1 = 'valorant';
+                alt1 = 'valorant';
                 break;
             case 'TEAMFIGHT TACTICS':
-                class1 = 'teamfight-tactics';
+                alt1 = 'teamfight-tactics';
                 break;
             case 'RUINED KING':
-                class1 = 'ruined-king';
+                alt1 = 'ruined-king';
                 break;
             case 'HEXTECH MAYHEM':
-                class1 = 'hextech-mayhem';
+                alt1 = 'hextech-mayhem';
                 break;
             case 'CONV/RGENCE':
-                class1 = 'convirgence';
+                alt1 = 'convirgence';
                 break;
             case 'SONG OF NUNU':
-                class1 = 'song-of-nunu';
+                alt1 = 'song-of-nunu';
+                break;
+            case 'LEGENDS OF RUNETERRA':
+                alt1 = 'legends-of-runeterra';
+                break;
+            case 'LOL: WILD RIFT':
+                alt1 = 'league-of-legends-wr';
                 break;
             default:
-                class1 = 'no-photo';
+                alt1 = 'no-photo';
                 break;
         }
-        return class1;
+        return alt1;
     }
     $('.flex-laptop-menu .dropdown-element').hover(function(){
-        $('.flex-laptop-menu .card-render-container *').css({'opacity':'0'});
-        $('.flex-laptop-menu .card-render-container').addClass(gameToRender($(this).text()));
+        $('.flex-laptop-menu .card-render *').css({'opacity':'0'});
+        $("img[alt='"+String(gameToRender($(this).text()))+"']").css({'display':'inline','z-index':'2'});
     }, function(){
-        $('.flex-laptop-menu .card-render-container *').css({'opacity':'1'});
-        $('.flex-laptop-menu .card-render-container').removeClass(gameToRender($(this).text()));
+        $('.flex-laptop-menu .card-render *').css({'opacity':'1'});
+        $("img[alt='"+String(gameToRender($(this).text()))+"']").css({'display':'none','z-index':'0'});
     });
 
     
