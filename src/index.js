@@ -17,14 +17,21 @@ bgImg.forEach(x => {bgImgObserver.observe(x)});*/
 
 
 //jquery code
+let scrollCount = 0;
 $(document).ready(function(){
-    $(window).on('scroll', function(){
-        let gap = 100;
-        let scrollHeight = $(window).scrollTop();
-        if(scrollHeight > gap){
-            $('.home-header').css({'backgroundColor':'var(--myBlack)'});
-        }else{
-            $('.home-header').css({'backgroundColor':'transparent'});
+
+
+    $(window).scroll(function(){
+        scrollCount++;
+        if(scrollCount % 10 === 0){
+            let gap = 200;
+            let scrollHeight = $(window).scrollTop();
+            console.log("hi");
+            if(scrollHeight > gap){
+                $('.home-header').css({'backgroundColor':'var(--myBlack)'});
+            }else{
+                $('.home-header').css({'backgroundColor':'transparent'});
+            }
         }
     });
 
