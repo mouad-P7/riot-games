@@ -4,7 +4,8 @@
   "description": "I will try to clone \"Riot Games\" website from scratch.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
