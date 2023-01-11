@@ -1,8 +1,26 @@
+//javascript code
+import "./css/style.css";
+import "./css/res-style.css";
+import "./css/toggle.css";
+
+
+/*const bgImg = document.querySelectorAll('.events-hero, .article-photo, .flex-games .card, .flex-games .game-logo, .monster-photo, .flex-mobile-menu .card1, .flex-mobile-menu .card2');
+const bgImgObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.toggle('lazy');
+            bgImgObserver.unobserve(entry.target);
+        }
+    });
+}, {rootMargin:'200px 0px'});
+bgImg.forEach(x => {bgImgObserver.observe(x)});*/
+
+
 //jquery code
 $(document).ready(function(){
     $(window).on('scroll', function(){
         let gap = 100;
-        scrollHeight = $(window).scrollTop();
+        let scrollHeight = $(window).scrollTop();
         if(scrollHeight > gap){
             $('.home-header').css({'backgroundColor':'var(--myBlack)'});
         }else{
@@ -172,16 +190,5 @@ $(document).ready(function(){
 });
 
 
-//javascript code
-/*const bgImg = document.querySelectorAll('.events-hero, .article-photo, .flex-games .card, .flex-games .game-logo, .monster-photo, .flex-mobile-menu .card1, .flex-mobile-menu .card2');
-const bgImgObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.toggle('lazy');
-            bgImgObserver.unobserve(entry.target);
-        }
-    });
-}, {rootMargin:'200px 0px'});
-bgImg.forEach(x => {bgImgObserver.observe(x)});*/
 
 
