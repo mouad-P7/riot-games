@@ -21,12 +21,11 @@ let scrollCount = 0;
 $(document).ready(function(){
 
 
+    let gap = 200;
     $(window).scroll(function(){
         scrollCount++;
         if(scrollCount % 10 === 0){
-            let gap = 200;
             let scrollHeight = $(window).scrollTop();
-            console.log("hi");
             if(scrollHeight > gap){
                 $('.home-header').css({'backgroundColor':'var(--myBlack)'});
             }else{
@@ -123,6 +122,7 @@ $(document).ready(function(){
         $('.home-header').css({'opacity':'1'});
         $('.home-main > *').css({'opacity':'1'});
     });
+
 
     let mobileDropdownContainer = $('.flex-mobile-menu .dropdown-container');
     let mobileDropdown = $('.flex-mobile-menu .dropdown-container .dropdown');
