@@ -6,7 +6,8 @@ module.exports = merge(common, {
     mode: "development",
     output: {
         filename: "[name].js",
-        path: path.resolve(__dirname,"dist")
+        path: path.resolve(__dirname,"dist"),
+        assetModuleFilename: 'images/[name][ext]'
     }
 
 });

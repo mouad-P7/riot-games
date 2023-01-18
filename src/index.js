@@ -1,7 +1,39 @@
 //javascript code
+//import css files
 import "./css/style.css";
 import "./css/res-style.css";
 import "./css/toggle.css";
+//import imgs inside images/ folder
+import "./images/annie.jpg";
+import "./images/article-img-1.png";
+import "./images/article-img-2.png";
+import "./images/article-img-3.png";
+import "./images/article-img-4.png";
+import "./images/card1-photo.jpg";
+import "./images/card2-photo.jpg";
+import "./images/convirgence-logo.png";
+import "./images/convirgence.png";
+import "./images/favicon.ico";
+import "./images/hero.png";
+import "./images/hextech-mayhem-logo.png";
+import "./images/hextech-mayhem.jpg";
+import "./images/league-of-legends-logo.png";
+import "./images/league-of-legends.jpg";
+import "./images/league-of-legends-wr-logo.png";
+import "./images/league-of-legends-wr.png";
+import "./images/legends-of-runeterra-logo.png";
+import "./images/legends-of-runeterra.png";
+import "./images/main-photo.jpg";
+import "./images/no-img.jpg";
+import "./images/ruined-king-logo.png";
+import "./images/ruined-king.png";
+import "./images/song-of-nunu-logo.png";
+import "./images/song-of-nunu.jpg";
+import "./images/star-guardian-logo.png";
+import "./images/teamfight-tactics-logo.png";
+import "./images/teamfight-tactics.jpg";
+import "./images/valorant-logo.png";
+import "./images/valorant.png";
 
 
 /*const bgImg = document.querySelectorAll('.events-hero, .article-photo, .flex-games .card, .flex-games .game-logo, .monster-photo, .flex-mobile-menu .card1, .flex-mobile-menu .card2');
