@@ -1,8 +1,11 @@
+const path = require("path");
 const htmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: "./src/index.js",
     output: {
+        path: path.resolve(__dirname,"dist"),
+        assetModuleFilename: 'images/[name][ext]',
         clean: true
     },
     plugins: [
@@ -24,7 +27,6 @@ module.exports = {
                 test: /\.(png|svg|jpe?g|gif|ico)$/,
                 type: 'asset/resource'
             }
-
         ]
     }
 

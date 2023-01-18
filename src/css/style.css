@@ -734,6 +734,7 @@ i#left-menu-fist-icon{
     left: 0;
     height: 61rem;
     object-fit: cover;
+    width: 100vw;
 }
 #star-guardian-section{
     height: 61rem;
